@@ -35,7 +35,6 @@ class _LocalStorageScreenState extends State<LocalStorageScreen> {
               onPressed: () async {
                 SharedPreferences prefs = await SharedPreferences.getInstance();
                 prefs.setString("TestString_Key", "My Value!");
-                print("Data saved");
               },
               child: Text("Save Data"),
             ),
