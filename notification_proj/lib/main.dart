@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Notification Learning',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: MyHomePage(title: 'Flutter Notification Learning Home Page'),
-        routes: {
-          "red": (_) => RedPage(),
-          "green": (_) => GreenPage(),
-        });
+      title: 'Flutter Notification Learning',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Notification Learning Home Page'),
+      routes: {
+        "red": (_) => RedPage(),
+        "green": (_) => GreenPage(),
+      },
+    );
   }
 }
 
