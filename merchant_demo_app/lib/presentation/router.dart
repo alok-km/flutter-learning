@@ -8,7 +8,7 @@ class AppRouter {
       case "/":
         return MaterialPageRoute(builder: (_) => SplashScreen());
       // case HOME_SCREEN:
-      //   return MaterialPageRoute(builder: (_) => PostDataScreen());
+      //   return MaterialPageRoute(builder: (_) => HomeScreen());
       default:
         return null;
     }
