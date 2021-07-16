@@ -19,6 +19,9 @@ class HomeScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
+      title: Text(
+        'Merchant App',
+      ),
       backgroundColor: kPrimaryColor,
       elevation: 0,
       leading: IconButton(

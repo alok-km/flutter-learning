@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 
-class RecommendsPlants extends StatelessWidget {
-  const RecommendsPlants({
+class ItemList extends StatelessWidget {
+  const ItemList({
     Key? key,
   }) : super(key: key);
 
@@ -12,42 +12,55 @@ class RecommendsPlants extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
-          RecommendPlantCard(
-            image: "lib/assets/images/image_1.png",
-            title: "Samantha",
-            country: "Russia",
-            price: 440,
-            press: () {},
+          Row(
+            children: [
+              Item(
+                  image: "lib/assets/images/nike.jpg",
+                  title: "Nike Flyknit IV",
+                  brand: "Nike",
+                  price: 1199,
+                  press: () {}),
+              Item(
+                  image: "lib/assets/images/echo.jpg",
+                  title: "Amazon Echo",
+                  brand: "Amazon",
+                  price: 1999,
+                  press: () {}),
+            ],
           ),
-          RecommendPlantCard(
-              image: "lib/assets/images/image_2.png",
-              title: "Angelica",
-              country: "Russia",
-              price: 440,
-              press: () {}),
-          RecommendPlantCard(
-              image: "lib/assets/images/image_3.png",
-              title: "Samantha",
-              country: "Russia",
-              price: 440,
-              press: () {}),
+          Row(
+            children: [
+              Item(
+                  image: "lib/assets/images/perfume.jpg",
+                  title: "Parfum",
+                  brand: "Jo Malone",
+                  price: 799,
+                  press: () {}),
+              Item(
+                  image: "lib/assets/images/headphones.jpg",
+                  title: "Studio 3",
+                  brand: "Beats by Dre",
+                  price: 2999,
+                  press: () {}),
+            ],
+          ),
         ],
       ),
     );
   }
 }
 
-class RecommendPlantCard extends StatelessWidget {
-  const RecommendPlantCard({
+class Item extends StatelessWidget {
+  const Item({
     Key? key,
     required this.image,
     required this.title,
-    required this.country,
+    required this.brand,
     required this.price,
     required this.press,
   }) : super(key: key);
 
-  final String image, title, country;
+  final String image, title, brand;
   final int price;
   final VoidCallback press;
 
@@ -92,7 +105,7 @@ class RecommendPlantCard extends StatelessWidget {
                           style: Theme.of(context).textTheme.button,
                         ),
                         TextSpan(
-                          text: "$country".toUpperCase(),
+                          text: "$brand".toUpperCase(),
                           style: TextStyle(
                             color: kPrimaryColor.withOpacity(0.5),
                           ),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 
-class TitleWithMoreBtn extends StatelessWidget {
-  const TitleWithMoreBtn({
+class CartTitleWithEditBtn extends StatelessWidget {
+  const CartTitleWithEditBtn({
     Key? key,
     required this.title,
     required this.press,
@@ -22,7 +22,7 @@ class TitleWithMoreBtn extends StatelessWidget {
       ),
       child: Row(
         children: [
-          TitleWithCustomUnderline(
+          CartTitleWithCustomUnderline(
             text: title,
             icon: pre_icon,
           ),
@@ -38,8 +38,8 @@ class TitleWithMoreBtn extends StatelessWidget {
   }
 }
 
-class TitleWithCustomUnderline extends StatelessWidget {
-  const TitleWithCustomUnderline({
+class CartTitleWithCustomUnderline extends StatelessWidget {
+  const CartTitleWithCustomUnderline({
     Key? key,
     required this.text,
     required this.icon,
