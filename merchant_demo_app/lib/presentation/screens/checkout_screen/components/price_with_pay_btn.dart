@@ -1,14 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
+import 'package:merchant_demo_app/models/retrieve_app_to_app_url.dart';
 
-class PriceWithPayBtn extends StatelessWidget {
+class PriceWithPayBtn extends StatefulWidget {
   const PriceWithPayBtn({
     Key? key,
     required this.price,
   }) : super(key: key);
 
   final String price;
+
+  @override
+  _PriceWithPayBtnState createState() => _PriceWithPayBtnState();
+}
+
+class _PriceWithPayBtnState extends State<PriceWithPayBtn> {
+  String token = "";
+
+  getToken() async {
+    final result = await generateAppToAppToken();
+    setState(() {
+      token = result;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getToken();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +41,7 @@ class PriceWithPayBtn extends StatelessWidget {
         ),
         SizedBox(height: 40),
         Text(
-          "HKD $price",
+          "HKD ${widget.price}",
           style: Theme.of(context)
               .textTheme
               .headline4!
@@ -36,7 +57,12 @@ class PriceWithPayBtn extends StatelessWidget {
             constraints:
                 BoxConstraints.tightFor(width: double.infinity, height: 50),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                getToken();
+                retrieveAppToAppToken(retrieveTokenURLprefix + token);
+              },
+
+              //launchAndroidIntent();
               child: Text(
                 "Pay",
                 style: Theme.of(context)
