@@ -16,13 +16,13 @@ class ItemList extends StatelessWidget {
             children: [
               Item(
                   image: "lib/assets/images/nike.jpg",
-                  title: "Nike Flyknit IV",
+                  title: "Nike AF1 Mid",
                   brand: "Nike",
                   price: 1199,
                   press: () {}),
               Item(
                   image: "lib/assets/images/echo.jpg",
-                  title: "Amazon Echo",
+                  title: "Echo Home",
                   brand: "Amazon",
                   price: 1999,
                   press: () {}),

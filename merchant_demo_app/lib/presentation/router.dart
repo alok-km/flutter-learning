@@ -11,6 +11,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => SplashScreen());
       case CHECKOUT:
         return MaterialPageRoute(builder: (_) => CheckoutScreen());
+      // case PAYLOAD:
+      //   return MaterialPageRoute(builder: (_) => GetPayload());
       default:
         return null;
     }

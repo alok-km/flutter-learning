@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
-import 'package:merchant_demo_app/models/retrieve_app_to_app_url.dart';
+import 'package:merchant_demo_app/models/retrieve_payload.dart';
 
+//ignore: must_be_immutable
 class PriceWithPayBtn extends StatefulWidget {
-  const PriceWithPayBtn({
-    Key? key,
-    required this.price,
-  }) : super(key: key);
+  const PriceWithPayBtn({Key? key, required this.price}) : super(key: key);
 
   final String price;
 
@@ -19,9 +17,9 @@ class _PriceWithPayBtnState extends State<PriceWithPayBtn> {
   String token = "";
 
   getToken() async {
-    final result = await generateAppToAppToken();
+    final tokenResult = await generateAppToAppToken();
     setState(() {
-      token = result;
+      token = tokenResult;
     });
   }
 
@@ -59,10 +57,11 @@ class _PriceWithPayBtnState extends State<PriceWithPayBtn> {
             child: ElevatedButton(
               onPressed: () {
                 getToken();
-                retrieveAppToAppToken(retrieveTokenURLprefix + token);
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => RetrievePayload(token: token),
+                ));
+                //launchAndroidIntent(payload);
               },
-
-              //launchAndroidIntent();
               child: Text(
                 "Pay",
                 style: Theme.of(context)
