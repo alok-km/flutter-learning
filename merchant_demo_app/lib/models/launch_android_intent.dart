@@ -6,5 +6,5 @@ void launchAndroidIntent(String payload) async {
     //data:,
     arguments: {'payload': payload},
   );
-  await intent.launch();
+  await intent.launchChooser("Choose a Payment App");
 }
