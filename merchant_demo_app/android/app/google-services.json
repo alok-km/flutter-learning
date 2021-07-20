@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409813646484",
+    "project_id": "merchant-demo-16561",
+    "storage_bucket": "merchant-demo-16561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409813646484:android:a1074c500f2296649b8881",
+        "android_client_info": {
+          "package_name": "com.example.merchant_demo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409813646484-uo2msnmcomvv4c5p82669fqcvnauv9ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGCRNyHXXgDKPQZQTaTPZHalU2yqP3OHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409813646484-uo2msnmcomvv4c5p82669fqcvnauv9ld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,6 +11,7 @@ const double kDefaultPadding = 20.0;
 //constants for routing
 const CHECKOUT = "/checkout";
 const PAYLOAD = "/payload";
+const SUCCESS = "/success";
 
 //URLs we use in our app
 const generateTokenURL = "https://10.3.60.45:8081/initiateAppToAppPaymentToken";

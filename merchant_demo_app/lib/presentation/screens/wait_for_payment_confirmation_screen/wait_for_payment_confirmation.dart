@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/launch_android_intent.dart';
 import 'package:merchant_demo_app/models/retrieve_app_to_app_token.dart';
+import 'package:merchant_demo_app/presentation/screens/wait_for_payment_confirmation_screen/body.dart';
 
 //ignore: must_be_immutable
 class WaitForPaymentConfirmation extends StatefulWidget {
@@ -38,6 +39,8 @@ class _WaitForPaymentConfirmationState
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Body(),
+    );
   }
 }

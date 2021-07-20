@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/models/build_app_bar.dart';
 import 'package:merchant_demo_app/presentation/screens/checkout_screen/components/body.dart';
 
 class CheckoutScreen extends StatelessWidget {
@@ -8,22 +8,8 @@ class CheckoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context),
+      appBar: buildAppBar(),
       body: Body(),
-    );
-  }
-
-  AppBar buildAppBar(BuildContext context) {
-    return AppBar(
-      title: Text('Merchant App'),
-      backgroundColor: kPrimaryColor,
-      elevation: 0,
-      leading: IconButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        icon: Icon(Icons.arrow_back),
-      ),
     );
   }
 }

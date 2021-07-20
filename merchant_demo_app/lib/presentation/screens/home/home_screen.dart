@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/models/build_app_bar.dart';
 
 import 'components/body.dart';
 import 'components/my_bottom_nav_bar.dart';
@@ -14,20 +13,6 @@ class HomeScreen extends StatelessWidget {
       appBar: buildAppBar(),
       body: Body(),
       bottomNavigationBar: MyBottomNavBar(),
-    );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-      title: Text(
-        'Merchant App',
-      ),
-      backgroundColor: kPrimaryColor,
-      elevation: 0,
-      leading: IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset("lib/assets/icons/menu.svg"),
-      ),
     );
   }
 }

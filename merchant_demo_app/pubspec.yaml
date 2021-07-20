@@ -31,6 +31,9 @@ dependencies:
     sdk: flutter
   android_intent_plus: ^1.0.2
   cupertino_icons: ^1.0.2
+  firebase_core: ^1.4.0
+  firebase_messaging: ^10.0.4
+  flutter_local_notifications: ^6.0.0
   flutter_svg: ^0.22.0
   http: ^0.13.3
 

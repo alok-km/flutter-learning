@@ -1,12 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'models/background_notifications_handler.dart';
 import 'presentation/router.dart';
 
-void main() {
-  runApp(
-    MerchantDemoApp(
-      router: AppRouter(),
-    ),
-  );
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  FirebaseMessaging.onBackgroundMessage(backgroundHandler);
+  runApp(MerchantDemoApp(router: AppRouter()));
 }
 
 class MerchantDemoApp extends StatelessWidget {
