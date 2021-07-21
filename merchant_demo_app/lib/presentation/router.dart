@@ -12,7 +12,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => SplashScreen());
       case CHECKOUT:
         return MaterialPageRoute(builder: (_) => CheckoutScreen());
-      case SUCCESS:
+      case "/paymentSuccess":
         return MaterialPageRoute(builder: (_) => PaymentSuccessScreen());
       default:
         return null;
