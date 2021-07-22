@@ -22,42 +22,40 @@ class MerchantDemoApp extends StatefulWidget {
 }
 
 class _MerchantDemoAppState extends State<MerchantDemoApp> {
+  Future<void> setupInteractedMessage() async {
+    RemoteMessage? initialMessage =
+        await FirebaseMessaging.instance.getInitialMessage();
+    if (initialMessage != null &&
+        initialMessage.data["referenceLabel"] == "moguts") {
+      Navigator.of(context).pushNamed(initialMessage.data["route"]);
+    }
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      if (message.data["referenceLabel"] == "moguts") {
+        Navigator.of(context).pushNamed(message.data["route"]);
+      }
+    });
+  }
+
   @override
   void initState() {
     super.initState();
 
     LocalNotificationService.initialize(context);
 
-    //gives us the message on which user taps and it opens the app from terminated state
-    //basically means it opens the app when the app is closed
-    FirebaseMessaging.instance.getInitialMessage().then((message) {
-      if (message != null) {
-        final routeFromMessage = message.data["route"];
-        final referenceLabel = message.data["referenceLabel"];
-        if (referenceLabel == "moguts") {
-          Navigator.of(context).pushNamed(routeFromMessage);
-        }
-      }
-    });
-
-    //only works when the app is in foreground
+    //foreground
     FirebaseMessaging.onMessage.listen((message) {
-      if (message.notification != null) {
-        print(message.notification!.body);
-        print(message.notification!.title);
-      }
-
-      LocalNotificationService.display(message);
-    });
-
-    //only works when the app is in background but open and user taps on the notification
-    FirebaseMessaging.onMessageOpenedApp.listen((message) {
       final routeFromMessage = message.data["route"];
       final referenceLabel = message.data["referenceLabel"];
       if (referenceLabel == "moguts") {
         Navigator.of(context).pushNamed(routeFromMessage);
       }
+      LocalNotificationService.display(message);
     });
+
+    setupInteractedMessage();
+
+    //only works when the app is in background but open and user taps on the notification
 
     //to get the firebase token
     // FirebaseMessaging.instance.getToken().then((token) {
@@ -70,9 +68,6 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: widget.router.generateRoute,
-      // routes: {
-      //   "paymentSuccess": (_) => PaymentSuccessScreen(),
-      // },
     );
   }
 }

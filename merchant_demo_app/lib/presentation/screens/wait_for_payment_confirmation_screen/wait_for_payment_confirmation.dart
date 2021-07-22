@@ -33,37 +33,40 @@ class _WaitForPaymentConfirmationState
     launchAndroidIntent(payload);
   }
 
+  Future<void> setupInteractedMessage() async {
+    RemoteMessage? initialMessage =
+        await FirebaseMessaging.instance.getInitialMessage();
+    if (initialMessage != null &&
+        initialMessage.data["referenceLabel"] == "moguts") {
+      print(initialMessage.data);
+
+      Navigator.of(context).pushNamed(initialMessage.data["route"]);
+    }
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      print(message.data);
+      if (message.data["referenceLabel"] == "moguts") {
+        Navigator.of(context).pushNamed(message.data["route"]);
+      }
+    });
+  }
+
   @override
   void initState() {
     super.initState();
     getPayload();
-
     LocalNotificationService.initialize(context);
 
-    //gives us the message on which user taps and it opens the app from terminated state
-    //basically means it opens the app when the app is closed
-    FirebaseMessaging.instance.getInitialMessage().then((message) {
-      if (message != null) {
-        final routeFromMessage = message.data["route"];
-        Navigator.of(context).pushReplacementNamed(routeFromMessage);
-      }
-    });
-
-    //only works when the app is in foreground
+    //foreground
     FirebaseMessaging.onMessage.listen((message) {
-      if (message.notification != null) {
-        print(message.notification!.body);
-        print(message.notification!.title);
+      print(message.data);
+      if (message.data["referenceLabel"] == "moguts") {
+        Navigator.of(context).pushNamed(message.data["route"]);
       }
-
       LocalNotificationService.display(message);
     });
 
-    //only works when the app is in background but open and user taps on the notification
-    FirebaseMessaging.onMessageOpenedApp.listen((message) {
-      final routeFromMessage = message.data["route"];
-      Navigator.of(context).pushReplacementNamed(routeFromMessage);
-    });
+    setupInteractedMessage();
   }
 
   @override
