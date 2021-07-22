@@ -38,13 +38,13 @@ class _WaitForPaymentConfirmationState
         await FirebaseMessaging.instance.getInitialMessage();
     if (initialMessage != null &&
         initialMessage.data["referenceLabel"] == "moguts") {
-      print(initialMessage.data);
+      //print(initialMessage.data);
 
       Navigator.of(context).pushNamed(initialMessage.data["route"]);
     }
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      print(message.data);
+      //print(message.data);
       if (message.data["referenceLabel"] == "moguts") {
         Navigator.of(context).pushNamed(message.data["route"]);
       }
@@ -59,7 +59,7 @@ class _WaitForPaymentConfirmationState
 
     //foreground
     FirebaseMessaging.onMessage.listen((message) {
-      print(message.data);
+      //print(message.data);
       if (message.data["referenceLabel"] == "moguts") {
         Navigator.of(context).pushNamed(message.data["route"]);
       }
