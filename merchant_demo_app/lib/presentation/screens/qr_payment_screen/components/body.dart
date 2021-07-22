@@ -12,7 +12,7 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   final key = GlobalKey();
-  String textdata = 'sample text for creating QR code';
+  String textdata = 'sample232132';
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

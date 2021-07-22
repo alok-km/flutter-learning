@@ -33,7 +33,10 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
     FirebaseMessaging.instance.getInitialMessage().then((message) {
       if (message != null) {
         final routeFromMessage = message.data["route"];
-        Navigator.of(context).pushNamed(routeFromMessage);
+        final referenceLabel = message.data["referenceLabel"];
+        if (referenceLabel == "moguts") {
+          Navigator.of(context).pushNamed(routeFromMessage);
+        }
       }
     });
 
@@ -50,8 +53,16 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
     //only works when the app is in background but open and user taps on the notification
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
       final routeFromMessage = message.data["route"];
-      Navigator.of(context).pushNamed(routeFromMessage);
+      final referenceLabel = message.data["referenceLabel"];
+      if (referenceLabel == "moguts") {
+        Navigator.of(context).pushNamed(routeFromMessage);
+      }
     });
+
+    //to get the firebase token
+    // FirebaseMessaging.instance.getToken().then((token) {
+    //   print(token); // Print the Token in Console
+    // });
   }
 
   @override

@@ -14,12 +14,14 @@ class LocalNotificationService {
       ),
     );
 
-    _notificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: (String? route) async {
+    Future<void> onSelectNotification(String? route) async {
       if (route != null) {
         Navigator.of(context).pushReplacementNamed(route);
       }
-    });
+    }
+
+    _notificationsPlugin.initialize(initializationSettings,
+        onSelectNotification: onSelectNotification);
   }
 
   static void display(RemoteMessage message) async {
