@@ -12,8 +12,10 @@ const double kDefaultPadding = 20.0;
 const CHECKOUT = "/checkout";
 const PAYLOAD = "/payload";
 const PAYMENTSUCCESS = "/paymentsuccess";
+const DISPLAYQR = "/displayQR";
 
 //URLs we use in our app
 const generateTokenURL = "https://10.3.60.45:8081/initiateAppToAppPaymentToken";
 const retrieveTokenURLprefix =
     "https://10.3.60.45:8081/retrieveAppToAppPaymentToken/";
+const encodeEmvQRCode = "http://10.3.60.45:8082/encodeEmvQRCode";

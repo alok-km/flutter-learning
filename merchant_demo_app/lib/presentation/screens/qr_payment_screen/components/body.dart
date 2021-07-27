@@ -1,36 +1,55 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
 import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'amount_inputter.dart';
+import 'currency_drop_down.dart';
+import 'generate_btn.dart';
 
+//ignore: must_be_immutable
 class Body extends StatefulWidget {
-  const Body({Key? key}) : super(key: key);
-
+  Body({Key? key}) : super(key: key);
   @override
   _BodyState createState() => _BodyState();
 }
 
 class _BodyState extends State<Body> {
+  String rawQrData = '';
   final key = GlobalKey();
-  String textdata = 'sample232132';
+  final amountController = TextEditingController();
+  String dropDownValue = "HKD";
+  getRawQrData() async {
+    final tokenResult =
+        await generateRawQrData(dropDownValue, amountController.text);
+    setState(() {
+      rawQrData = tokenResult;
+    });
+  }
+
+  //have to call getToken() in initState() because we want it to be
+  //executed when the screen is initialized
+  @override
+  void initState() {
+    super.initState();
+    getRawQrData();
+    // generateRawQrData();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return Column(
-      children: [
-        HeaderWithSearchBox(size: size),
-        SizedBox(height: kDefaultPadding),
-        RepaintBoundary(
-          key: key,
-          child: Container(
-            color: Colors.white,
-            child: QrImage(
-              size: 300, //size of the QrImage widget.
-              data: textdata, //textdata used to create QR code
-            ),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          HeaderWithSearchBox(size: size),
+          Column(
+            children: [
+              CurrencyDropDown(dropDownValue: dropDownValue),
+              AmountInputter(amountController: amountController),
+            ],
           ),
-        ),
-      ],
+          GenerateBtn(),
+        ],
+      ),
     );
   }
 }

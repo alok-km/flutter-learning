@@ -54,7 +54,7 @@ class _PaymentWithFPSButtonState extends State<PaymentWithFPSButton> {
             child: ElevatedButton(
               onPressed: pressPaymentWithFPSButton,
               child: Text(
-                "FPS Payment",
+                "App-to-App Payment",
                 style: Theme.of(context)
                     .textTheme
                     .headline5!
