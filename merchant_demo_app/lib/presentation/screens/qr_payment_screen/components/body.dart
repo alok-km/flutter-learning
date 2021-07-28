@@ -16,25 +16,47 @@ class _BodyState extends State<Body> {
   var items = ["HKD", "USD", "RMB", "EUR"];
   final amountController = TextEditingController();
   String rawQrData = '';
+  bool generatedQr = false;
 
   getRawQrData() async {
-    final rawQrDataResult = await generateRawQrData(
+    print(dropDownValue);
+    print(amountController.text);
+    generateRawQrData(
       dropDownValue,
       amountController.text,
+    ).then(
+      (value) => {
+        setState(() {
+          rawQrData = value;
+          generatedQr = true;
+        })
+      },
     );
-    setState(() {
-      rawQrData = rawQrDataResult;
-    });
   }
 
-  @override
-  void initState() {
-    super.initState();
-    getRawQrData();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   getRawQrData();
+  // }
 
   @override
   Widget build(BuildContext context) {
+    if (generatedQr) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => DisplayQRCode(
+            rawQrData: rawQrData,
+            dropDownValue: dropDownValue,
+            amountController: amountController,
+          ),
+          settings: RouteSettings(
+            arguments: rawQrData,
+          ),
+        ),
+      );
+    }
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
@@ -113,19 +135,6 @@ class _BodyState extends State<Body> {
                 onPressed: () {
                   getRawQrData();
                   print(rawQrData);
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DisplayQRCode(
-                        rawQrData: rawQrData,
-                        dropDownValue: dropDownValue,
-                        amountController: amountController,
-                      ),
-                      settings: RouteSettings(
-                        arguments: rawQrData,
-                      ),
-                    ),
-                  );
                 },
                 child: Text(
                   "Generate",
