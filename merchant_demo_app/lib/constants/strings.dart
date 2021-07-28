@@ -13,6 +13,8 @@ const CHECKOUT = "/checkout";
 const PAYLOAD = "/payload";
 const PAYMENTSUCCESS = "/paymentsuccess";
 const DISPLAYQR = "/displayQR";
+const HOME = "/home";
+const QRPAYMENT = "/qrPayment";
 
 //URLs we use in our app
 const generateTokenURL = "https://10.3.60.45:8081/initiateAppToAppPaymentToken";

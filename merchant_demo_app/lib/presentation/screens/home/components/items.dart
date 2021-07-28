@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/presentation/screens/home/components/cart_item_cart.dart';
+import 'package:merchant_demo_app/presentation/screens/home/components/cart_item_card.dart';
 
-const List prices = [1199, 1999, 799, 2999];
-
+//ignore: must_be_immutable
 class ItemList extends StatelessWidget {
   ItemList({Key? key}) : super(key: key);
+  List prices = [1199, 1999, 799, 2999];
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

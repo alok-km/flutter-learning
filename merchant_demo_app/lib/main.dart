@@ -55,8 +55,6 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
 
     setupInteractedMessage();
 
-    //only works when the app is in background but open and user taps on the notification
-
     //to get the firebase token
     // FirebaseMessaging.instance.getToken().then((token) {
     //   print(token); // Print the Token in Console

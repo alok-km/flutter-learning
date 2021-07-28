@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/models/build_app_bar.dart';
+import 'package:merchant_demo_app/components/build_app_bar.dart';
 
 import 'components/body.dart';
 

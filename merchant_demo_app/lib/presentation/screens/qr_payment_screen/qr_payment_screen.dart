@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/models/build_app_bar.dart';
+import 'package:merchant_demo_app/components/build_app_bar.dart';
+import 'package:merchant_demo_app/components/my_bottom_nav_bar.dart';
 import 'components/body.dart';
 
 class QRPaymentScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _QRPaymentScreenState extends State<QRPaymentScreen> {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 }
