@@ -47,31 +47,56 @@ class CartItemCard extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Row(
+              child: Column(
                 children: [
-                  RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "$title\n".toUpperCase(),
-                          style: Theme.of(context).textTheme.button,
+                  Row(
+                    children: [
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "$title\n".toUpperCase(),
+                              style: Theme.of(context).textTheme.button,
+                            ),
+                            TextSpan(
+                              text: "$brand".toUpperCase(),
+                              style: TextStyle(
+                                color: kPrimaryColor.withOpacity(0.5),
+                              ),
+                            )
+                          ],
                         ),
-                        TextSpan(
-                          text: "$brand".toUpperCase(),
-                          style: TextStyle(
-                            color: kPrimaryColor.withOpacity(0.5),
-                          ),
-                        )
-                      ],
-                    ),
+                      ),
+                      Spacer(),
+                      Text(
+                        '\$$price',
+                        style: Theme.of(context)
+                            .textTheme
+                            .button!
+                            .copyWith(color: kPrimaryColor),
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Text(
-                    '\$$price',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button!
-                        .copyWith(color: kPrimaryColor),
+                  Row(
+                    children: [
+                      Spacer(),
+                      Text(
+                        '-',
+                        style: Theme.of(context)
+                            .textTheme
+                            .button!
+                            .copyWith(color: kPrimaryColor),
+                      ),
+                      Spacer(),
+                      Text(
+                        '+',
+                        style: Theme.of(context)
+                            .textTheme
+                            .button!
+                            .copyWith(color: kPrimaryColor),
+                      ),
+                      Spacer(),
+                    ],
                   ),
                 ],
               ),
