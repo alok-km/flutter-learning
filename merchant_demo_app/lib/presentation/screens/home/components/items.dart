@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
-import 'package:get/get.dart';
 import 'cart_item_card.dart';
+import 'package:get/get.dart';
 
 //ignore: must_be_immutable
 class ItemList extends StatelessWidget {
   ItemList({Key? key}) : super(key: key);
-
   final CartItemController cartItemController = Get.put(CartItemController());
   @override
   Widget build(BuildContext context) {

@@ -2,12 +2,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/services/local_notification_service.dart';
+import 'controllers/cart_item_controller.dart';
 import 'models/background_notifications_handler.dart';
 import 'presentation/router.dart';
 import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Get.put(CartItemController());
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
   runApp(MerchantDemoApp(router: AppRouter()));

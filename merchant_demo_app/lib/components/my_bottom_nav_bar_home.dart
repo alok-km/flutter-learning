@@ -6,11 +6,16 @@ import 'package:get/get.dart';
 //ignore: must_be_immutable
 class MyBottomNavBarHome extends StatelessWidget {
   MyBottomNavBarHome({Key? key}) : super(key: key);
+
   final CartItemController cartItemController = Get.find();
 
   @override
   Widget build(BuildContext context) {
-    var total = cartItemController.total();
+    cartItemController.resetTotal();
+    for (var i = 0; i < cartItemController.cartItemCount.length; i++) {
+      cartItemController.total +=
+          cartItemController.prices[i] * cartItemController.cartItemCount[i];
+    }
     return Container(
       padding: EdgeInsets.only(
         left: kDefaultPadding * 2,
@@ -30,18 +35,20 @@ class MyBottomNavBarHome extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Row(
-            children: [
-              IconButton(
-                onPressed: () => Navigator.pushNamed(context, CHECKOUT),
-                icon: Image.asset("lib/assets/icons/shopping-cart.png"),
-              ),
-              Text(
-                "Total: ${total}",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              Spacer(),
-            ],
+          Obx(
+            () => Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Image.asset("lib/assets/icons/shopping-cart.png"),
+                ),
+                Text(
+                  "Total: ${cartItemController.total}",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
+                Spacer(),
+              ],
+            ),
           ),
           Divider(
             thickness: 2,
