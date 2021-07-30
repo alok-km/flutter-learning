@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/components/build_app_bar.dart';
-
+import 'package:merchant_demo_app/components/my_bottom_nav_bar_home.dart';
 import 'components/body.dart';
-import '../../../components/my_bottom_nav_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -12,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
-      bottomNavigationBar: MyBottomNavBar(),
+      bottomNavigationBar: MyBottomNavBarHome(),
     );
   }
 }

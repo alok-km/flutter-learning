@@ -1,20 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:get/get.dart';
+import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 
 class CartItemCard extends StatelessWidget {
-  const CartItemCard({
+  CartItemCard({
     Key? key,
     required this.image,
     required this.title,
     required this.brand,
     required this.price,
     required this.press,
+    required this.index,
+    required this.cartItemController,
   }) : super(key: key);
 
   final String image, title, brand;
-  final int price;
+  final int price, index;
   final VoidCallback press;
+  final CartItemController cartItemController;
 
   @override
   Widget build(BuildContext context) {
@@ -77,26 +82,46 @@ class CartItemCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
-                    children: [
-                      Spacer(),
-                      Text(
-                        '-',
-                        style: Theme.of(context)
-                            .textTheme
-                            .button!
-                            .copyWith(color: kPrimaryColor),
-                      ),
-                      Spacer(),
-                      Text(
-                        '+',
-                        style: Theme.of(context)
-                            .textTheme
-                            .button!
-                            .copyWith(color: kPrimaryColor),
-                      ),
-                      Spacer(),
-                    ],
+                  Obx(
+                    () => Row(
+                      children: [
+                        Spacer(),
+                        TextButton(
+                          onPressed: () {
+                            cartItemController.decrement(index);
+                          },
+                          child: Text(
+                            "-",
+                            style: Theme.of(context)
+                                .textTheme
+                                .button!
+                                .copyWith(color: kPrimaryColor),
+                          ),
+                        ),
+                        Spacer(),
+                        Text(
+                          '${cartItemController.cartItemCount[index]}',
+                          style: Theme.of(context)
+                              .textTheme
+                              .button!
+                              .copyWith(color: kPrimaryColor),
+                        ),
+                        Spacer(),
+                        TextButton(
+                          onPressed: () {
+                            cartItemController.increment(index);
+                          },
+                          child: Text(
+                            "+",
+                            style: Theme.of(context)
+                                .textTheme
+                                .button!
+                                .copyWith(color: kPrimaryColor),
+                          ),
+                        ),
+                        Spacer(),
+                      ],
+                    ),
                   ),
                 ],
               ),

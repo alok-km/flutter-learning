@@ -37,26 +37,6 @@ class MyBottomNavBar extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(context, QRPAYMENT),
             icon: Image.asset("lib/assets/icons/qr-code.png"),
           ),
-
-          // Text(
-          //   "Total: 060",
-          //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          // ),
-          // Spacer(),
-          // ElevatedButton(
-          //   onPressed: () => Navigator.pushNamed(context, CHECKOUT),
-          //   child: Text(
-          //     "Checkout",
-          //     style: Theme.of(context)
-          //         .textTheme
-          //         .headline5!
-          //         .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
-          //   ),
-          //   style: ElevatedButton.styleFrom(
-          //     primary: Colors.grey[700],
-          //     textStyle: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          //   ),
-          // ),
         ],
       ),
     );

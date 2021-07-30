@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/services/local_notification_service.dart';
 import 'models/background_notifications_handler.dart';
 import 'presentation/router.dart';
+import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -63,7 +64,7 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: widget.router.generateRoute,
     );
