@@ -17,11 +17,10 @@ class _BodyState extends State<Body> {
   final amountController = TextEditingController();
   String rawQrData = '';
   bool generatedQr = false;
+  //final QrPaymentController qrPaymentController = Get.put(QrPaymentController());
 
   getRawQrData() async {
-    print(dropDownValue);
-    print(amountController.text);
-    generateRawQrData(
+    await generateRawQrData(
       dropDownValue,
       amountController.text,
     ).then(
@@ -32,17 +31,7 @@ class _BodyState extends State<Body> {
         })
       },
     );
-  }
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   getRawQrData();
-  // }
-
-  @override
-  Widget build(BuildContext context) {
-    if (generatedQr) {
+    if (await generatedQr) {
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -57,6 +46,16 @@ class _BodyState extends State<Body> {
         ),
       );
     }
+  }
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   getRawQrData();
+  // }
+
+  @override
+  Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
@@ -132,8 +131,8 @@ class _BodyState extends State<Body> {
               constraints:
                   BoxConstraints.tightFor(width: double.infinity, height: 40),
               child: ElevatedButton(
-                onPressed: () {
-                  getRawQrData();
+                onPressed: () async {
+                  await getRawQrData();
                   print(rawQrData);
                 },
                 child: Text(

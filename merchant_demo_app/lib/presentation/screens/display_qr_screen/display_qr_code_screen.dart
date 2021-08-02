@@ -11,7 +11,8 @@ class DisplayQRCode extends StatefulWidget {
     required this.amountController,
     required this.dropDownValue,
   }) : super(key: key);
-  String rawQrData, dropDownValue;
+  String dropDownValue;
+  String rawQrData;
   TextEditingController amountController;
 
   @override

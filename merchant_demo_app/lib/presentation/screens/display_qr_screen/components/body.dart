@@ -9,7 +9,8 @@ class Body extends StatefulWidget {
     required this.dropDownValue,
     required this.amountController,
   }) : super(key: key);
-  String rawQrData, dropDownValue;
+  String rawQrData;
+  String dropDownValue;
   TextEditingController amountController;
 
   @override

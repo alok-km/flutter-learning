@@ -8,10 +8,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: buildAppBar(),
-      body: Body(),
-      bottomNavigationBar: MyBottomNavBarHome(),
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: Scaffold(
+        appBar: buildAppBar(),
+        body: Body(),
+        bottomNavigationBar: MyBottomNavBarHome(),
+      ),
     );
   }
 }

@@ -89,6 +89,8 @@ class CartItemCard extends StatelessWidget {
                         TextButton(
                           onPressed: () {
                             cartItemController.decrement(index);
+                            cartItemController.resetTotal();
+                            cartItemController.recalculateTotal();
                           },
                           child: Text(
                             "-",
@@ -110,6 +112,8 @@ class CartItemCard extends StatelessWidget {
                         TextButton(
                           onPressed: () {
                             cartItemController.increment(index);
+                            cartItemController.resetTotal();
+                            cartItemController.recalculateTotal();
                           },
                           child: Text(
                             "+",

@@ -11,11 +11,6 @@ class MyBottomNavBarHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    cartItemController.resetTotal();
-    for (var i = 0; i < cartItemController.cartItemCount.length; i++) {
-      cartItemController.total +=
-          cartItemController.prices[i] * cartItemController.cartItemCount[i];
-    }
     return Container(
       padding: EdgeInsets.only(
         left: kDefaultPadding * 2,
@@ -58,7 +53,7 @@ class MyBottomNavBarHome extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
-                onPressed: () => Navigator.pushNamed(context, HOME),
+                onPressed: () => Navigator.pushReplacementNamed(context, HOME),
                 icon: Image.asset("lib/assets/icons/home.png"),
               ),
               IconButton(
