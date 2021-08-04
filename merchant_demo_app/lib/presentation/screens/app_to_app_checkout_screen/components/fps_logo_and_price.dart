@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 
 class FPSLogoAndPrice extends StatelessWidget {
-  const FPSLogoAndPrice({Key? key, required this.price}) : super(key: key);
-  final String price;
-
+  FPSLogoAndPrice({Key? key}) : super(key: key);
+  final CartItemController cartItemController = Get.put(CartItemController());
   @override
   Widget build(BuildContext context) {
     return Column(children: [
@@ -14,7 +15,7 @@ class FPSLogoAndPrice extends StatelessWidget {
       ),
       SizedBox(height: 40),
       Text(
-        "HKD ${price}",
+        "HKD ${cartItemController.total}",
         style: Theme.of(context)
             .textTheme
             .headline4!

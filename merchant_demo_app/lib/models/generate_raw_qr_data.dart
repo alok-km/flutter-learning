@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:http/io_client.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 
-Future generateRawQrData(String currency, String price) async {
+Future generateRawQrData(String currency, String price, String refLabel) async {
   final body = jsonEncode({
     "poiMethod": "DYNAMIC",
     "trxCurrency": "${currency}",
     "trxAmt": "${price}",
-    "referenceLabel": "moguts",
+    "referenceLabel": "${refLabel}",
     "clearingCode": "004",
     "proxyId": "dev@iaspec.com",
     "proxyIdType": "EMAIL_ADDRESS",

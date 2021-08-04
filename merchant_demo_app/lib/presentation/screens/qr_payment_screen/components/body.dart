@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
 import 'package:merchant_demo_app/presentation/screens/display_qr_screen/display_qr_code_screen.dart';
 import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
@@ -17,12 +18,12 @@ class _BodyState extends State<Body> {
   final amountController = TextEditingController();
   String rawQrData = '';
   bool generatedQr = false;
-  //final QrPaymentController qrPaymentController = Get.put(QrPaymentController());
-
   getRawQrData() async {
+    String refLabel = generateRefLabel();
     await generateRawQrData(
       dropDownValue,
       amountController.text,
+      refLabel,
     ).then(
       (value) => {
         setState(() {

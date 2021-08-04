@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
 import 'fps_logo_and_price.dart';
-import 'payment_with_fps_button.dart';
+import 'app_to_app_payment_btn.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -13,8 +13,8 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWithSearchBox(size: size),
-          FPSLogoAndPrice(price: "6996.0"),
-          PaymentWithFPSButton(),
+          FPSLogoAndPrice(),
+          AppToAppPaymentBtn(),
         ],
       ),
     );

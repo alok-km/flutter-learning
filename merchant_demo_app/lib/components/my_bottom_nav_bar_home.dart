@@ -5,9 +5,9 @@ import 'package:get/get.dart';
 
 //ignore: must_be_immutable
 class MyBottomNavBarHome extends StatelessWidget {
-  MyBottomNavBarHome({Key? key}) : super(key: key);
-
-  final CartItemController cartItemController = Get.find();
+  MyBottomNavBarHome({Key? key, required this.cartItemController})
+      : super(key: key);
+  final CartItemController cartItemController;
 
   @override
   Widget build(BuildContext context) {

@@ -88,9 +88,11 @@ class CartItemCard extends StatelessWidget {
                         Spacer(),
                         TextButton(
                           onPressed: () {
+                            if (cartItemController.cartItemCount[index] > 0) {
+                              cartItemController.total -=
+                                  cartItemController.prices[index];
+                            }
                             cartItemController.decrement(index);
-                            cartItemController.resetTotal();
-                            cartItemController.recalculateTotal();
                           },
                           child: Text(
                             "-",
@@ -111,9 +113,9 @@ class CartItemCard extends StatelessWidget {
                         Spacer(),
                         TextButton(
                           onPressed: () {
+                            cartItemController.total +=
+                                cartItemController.prices[index];
                             cartItemController.increment(index);
-                            cartItemController.resetTotal();
-                            cartItemController.recalculateTotal();
                           },
                           child: Text(
                             "+",
