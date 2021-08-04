@@ -37,11 +37,22 @@ class MyBottomNavBarHome extends StatelessWidget {
                   onPressed: () {},
                   icon: Image.asset("lib/assets/icons/shopping-cart.png"),
                 ),
-                Text(
-                  "Total: ${cartItemController.total}",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: kDefaultPadding, right: kDefaultPadding),
+                  child: Text(
+                    "Total: ${cartItemController.total}",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
                 ),
                 Spacer(),
+                Container(
+                  width: 120,
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pushNamed(context, CHECKOUT),
+                    child: Text("Checkout"),
+                  ),
+                ),
               ],
             ),
           ),
@@ -49,22 +60,22 @@ class MyBottomNavBarHome extends StatelessWidget {
             thickness: 2,
             indent: 0,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                onPressed: () => Navigator.pushReplacementNamed(context, HOME),
-                icon: Image.asset("lib/assets/icons/home.png"),
-              ),
-              IconButton(
-                onPressed: () => Navigator.pushNamed(context, CHECKOUT),
-                icon: Image.asset("lib/assets/icons/app-to-app-payment.png"),
-              ),
-              IconButton(
-                onPressed: () => Navigator.pushNamed(context, QRPAYMENT),
-                icon: Image.asset("lib/assets/icons/qr-code.png"),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  onPressed: () =>
+                      Navigator.pushReplacementNamed(context, HOME),
+                  icon: Image.asset("lib/assets/icons/home.png"),
+                ),
+                IconButton(
+                  onPressed: () => Navigator.pushNamed(context, QRPAYMENT),
+                  icon: Image.asset("lib/assets/icons/qr-code.png"),
+                ),
+              ],
+            ),
           ),
         ],
       ),

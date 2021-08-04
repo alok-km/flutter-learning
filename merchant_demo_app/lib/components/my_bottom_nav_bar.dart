@@ -30,10 +30,6 @@ class MyBottomNavBar extends StatelessWidget {
             icon: Image.asset("lib/assets/icons/home.png"),
           ),
           IconButton(
-            onPressed: () => Navigator.pushNamed(context, CHECKOUT),
-            icon: Image.asset("lib/assets/icons/app-to-app-payment.png"),
-          ),
-          IconButton(
             onPressed: () => Navigator.pushNamed(context, QRPAYMENT),
             icon: Image.asset("lib/assets/icons/qr-code.png"),
           ),
