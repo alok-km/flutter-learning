@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
 import 'package:merchant_demo_app/presentation/screens/display_qr_screen/display_qr_code_screen.dart';
@@ -57,65 +58,66 @@ class _BodyState extends State<Body> {
         children: [
           //1. the header on top of the screen
           HeaderWithSearchBox(size: size),
-          //2. currency drop down
+          //2. currency drop down and amount inputter
           Padding(
-            padding: const EdgeInsets.only(left: 112.8, right: 112.8),
-            child: Row(
+            padding: const EdgeInsets.only(
+                left: kDefaultPadding * 3, right: kDefaultPadding * 2),
+            child: Table(
+              defaultVerticalAlignment: TableCellVerticalAlignment.middle,
               children: [
-                Container(
-                  child: Text(
-                    "Currency: ",
-                    style: Theme.of(context).textTheme.button,
-                  ),
-                ),
-                DropdownButton(
-                  value: dropDownValue,
-                  icon: Icon(Icons.keyboard_arrow_down),
-                  items: items.map((String items) {
-                    return DropdownMenuItem(value: items, child: Text(items));
-                  }).toList(),
-                  onChanged: (String? newValue) {
-                    setState(() {
-                      dropDownValue = newValue!;
-                    });
-                  },
-                ),
-              ],
-            ),
-          ),
-          //3. amount inputter
-          Padding(
-            padding: const EdgeInsets.only(left: 112.8, right: 112.8),
-            child: Row(
-              children: [
-                Container(
-                  child: Text(
-                    "Amount: ",
-                    style: Theme.of(context).textTheme.button,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 60),
-                  child: Container(
-                    // height: 20.0,
-                    width: 50,
-                    child: TextField(
-                      controller: amountController,
-                      inputFormatters: [
-                        FilteringTextInputFormatter.allow(
-                            RegExp(r'^\d+.?\d{0,2}')),
-                      ], //to only allow 2 decimal places
-                      keyboardType: TextInputType.numberWithOptions(
-                        decimal: true,
-                        signed: false,
+                TableRow(
+                  children: [
+                    Container(
+                      child: Text(
+                        "Currency: ",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ),
-                  ),
+                    DropdownButton(
+                      value: dropDownValue,
+                      icon: Icon(Icons.keyboard_arrow_down),
+                      items: items.map((String items) {
+                        return DropdownMenuItem(
+                            value: items, child: Text(items));
+                      }).toList(),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          dropDownValue = newValue!;
+                        });
+                      },
+                    ),
+                  ],
                 ),
+                TableRow(
+                  children: [
+                    Container(
+                      child: Text(
+                        "Amount: ",
+                        style: TextStyle(
+                            fontSize: 18, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Container(
+                      width: 50,
+                      child: TextField(
+                        controller: amountController,
+                        inputFormatters: [
+                          FilteringTextInputFormatter.allow(
+                              RegExp(r'^\d+.?\d{0,2}')),
+                        ], //to only allow 2 decimal places
+                        keyboardType: TextInputType.numberWithOptions(
+                          decimal: true,
+                          signed: false,
+                        ),
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           ),
-          //4. generate button
+          //. generate button
           Padding(
             padding: const EdgeInsets.only(
               top: 20,

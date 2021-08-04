@@ -15,7 +15,6 @@ class MyBottomNavBarHome extends StatelessWidget {
       padding: EdgeInsets.only(
         left: kDefaultPadding * 2,
         right: kDefaultPadding * 2,
-        //bottom: kDefaultPadding,
       ),
       height: 120,
       decoration: BoxDecoration(
