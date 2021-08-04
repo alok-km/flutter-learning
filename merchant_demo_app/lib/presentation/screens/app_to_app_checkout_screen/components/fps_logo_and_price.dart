@@ -5,7 +5,7 @@ import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 
 class FPSLogoAndPrice extends StatelessWidget {
   FPSLogoAndPrice({Key? key}) : super(key: key);
-  final CartItemController cartItemController = Get.put(CartItemController());
+  final CartItemController cartItemController = Get.find();
   @override
   Widget build(BuildContext context) {
     return Column(children: [

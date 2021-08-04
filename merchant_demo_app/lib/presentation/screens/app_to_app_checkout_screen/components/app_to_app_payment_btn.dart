@@ -16,8 +16,8 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
   String token = "";
 
   //FUNCTIONS
-  void pressAppToAppPaymentBtn() {
-    getToken();
+  void pressAppToAppPaymentBtn() async {
+    await getToken();
     Navigator.of(context).push(MaterialPageRoute(
       builder: (context) => WaitForPaymentConfirmation(token: token),
     ));
@@ -29,14 +29,6 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
     setState(() {
       token = tokenResult;
     });
-  }
-
-  //have to call getToken() in initState() because we want it to be
-  //executed when the screen is initialized
-  @override
-  void initState() {
-    super.initState();
-    getToken();
   }
 
   @override

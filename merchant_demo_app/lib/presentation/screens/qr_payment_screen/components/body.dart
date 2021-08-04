@@ -49,12 +49,6 @@ class _BodyState extends State<Body> {
     }
   }
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   getRawQrData();
-  // }
-
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
