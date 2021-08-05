@@ -36,17 +36,18 @@ class MyBottomNavBarHome extends StatelessWidget {
                   onPressed: () {},
                   icon: Image.asset("lib/assets/icons/shopping-cart.png"),
                 ),
+                Spacer(),
                 Padding(
                   padding: const EdgeInsets.only(
                       left: kDefaultPadding, right: kDefaultPadding),
                   child: Text(
-                    "Total: ${cartItemController.total}",
+                    "Total: ${cartItemController.total[0]}",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),
                 Spacer(),
                 Container(
-                  width: 120,
+                  width: 95,
                   child: ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, CHECKOUT),
                     child: Text("Checkout"),

@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'home/home_screen.dart';
-import 'splash_screen/splash_screen.dart';
+
+import 'screens/home/home_screen.dart';
+import 'screens/splash_screen/splash_screen.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {

@@ -5,15 +5,15 @@ import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 import 'package:get/get.dart';
 
-Future generateAppToAppToken() async {
+Future generateAppToAppToken(String refLabel) async {
   final CartItemController cartItemController = Get.find();
   final body = jsonEncode({
     "proxyId": "dev@iaspec.com",
     "proxyIdType": "EMAL",
     "merchantTimeout": 1665639120000,
     "transactionCcy": "HKD",
-    "transactionAmount": "${cartItemController.total}",
-    "referenceLabel": "moguts"
+    "transactionAmount": "${cartItemController.total[0]}",
+    "referenceLabel": "${refLabel}"
   });
   try {
     bool trustSelfSigned = true;

@@ -15,7 +15,7 @@ class FPSLogoAndPrice extends StatelessWidget {
       ),
       SizedBox(height: 40),
       Text(
-        "HKD ${cartItemController.total}",
+        "HKD ${cartItemController.total[0]}",
         style: Theme.of(context)
             .textTheme
             .headline4!

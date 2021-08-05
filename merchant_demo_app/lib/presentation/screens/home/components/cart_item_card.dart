@@ -17,7 +17,8 @@ class CartItemCard extends StatelessWidget {
   }) : super(key: key);
 
   final String image, title, brand;
-  final int price, index;
+  final int index;
+  final double price;
   final VoidCallback press;
   final CartItemController cartItemController;
 
@@ -89,8 +90,10 @@ class CartItemCard extends StatelessWidget {
                         TextButton(
                           onPressed: () {
                             if (cartItemController.cartItemCount[index] > 0) {
-                              cartItemController.total -=
-                                  cartItemController.prices[index];
+                              cartItemController.total[0] = double.parse(
+                                  (cartItemController.total[0] -
+                                          cartItemController.prices[index])
+                                      .toStringAsFixed(2));
                             }
                             cartItemController.decrement(index);
                           },
@@ -113,8 +116,10 @@ class CartItemCard extends StatelessWidget {
                         Spacer(),
                         TextButton(
                           onPressed: () {
-                            cartItemController.total +=
-                                cartItemController.prices[index];
+                            cartItemController.total[0] = double.parse(
+                                (cartItemController.total[0] +
+                                        cartItemController.prices[index])
+                                    .toStringAsFixed(2));
                             cartItemController.increment(index);
                           },
                           child: Text(

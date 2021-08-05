@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
+import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/presentation/screens/wait_for_payment_confirmation_screen/wait_for_payment_confirmation.dart';
 
 //ignore: must_be_immutable
@@ -23,9 +24,12 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
     ));
   }
 
-  //for converting the future returned from generateAppToAppToken() to string
   getToken() async {
-    final tokenResult = await generateAppToAppToken();
+    String refLabel = generateRefLabel();
+    print(refLabel);
+    final tokenResult = await generateAppToAppToken(refLabel);
+    print(tokenResult);
+    //for converting the future returned from generateAppToAppToken(refLabel) to string
     setState(() {
       token = tokenResult;
     });

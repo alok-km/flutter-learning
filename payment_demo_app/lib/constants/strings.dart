@@ -9,9 +9,4 @@ const kBackgroundColor = Color(0xFFF9F8FD);
 const double kDefaultPadding = 20.0;
 
 //constants for routing
-const CHECKOUT = "/checkout";
-const PAYLOAD = "/payload";
-const PAYMENTSUCCESS = "/paymentsuccess";
-const DISPLAYQR = "/displayQR";
 const HOME = "/home";
-const QRPAYMENT = "/qrPayment";

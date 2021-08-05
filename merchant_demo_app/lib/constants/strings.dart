@@ -17,7 +17,7 @@ const HOME = "/home";
 const QRPAYMENT = "/qrPayment";
 
 //URLs we use in our app
-const generateTokenURL = "https://10.3.60.45:8081/initiateAppToAppPaymentToken";
+const generateTokenURL = "https://10.3.60.45:8081/generateAppToAppPaymentToken";
 const retrieveTokenURLprefix =
     "https://10.3.60.45:8081/retrieveAppToAppPaymentToken/";
 const encodeEmvQRCode = "http://10.3.60.45:8082/encodeEmvQRCode";

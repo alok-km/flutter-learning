@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:payment_demo_app/constants/strings.dart';
 
 AppBar buildAppBar() {
-  var kPrimaryColor;
   return AppBar(
     title: Text(
       'Payment App',

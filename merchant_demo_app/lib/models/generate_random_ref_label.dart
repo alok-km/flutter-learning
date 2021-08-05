@@ -35,9 +35,9 @@ String generateRefLabel() {
   String refLabelPrefix = getPrefix();
   final DateTime now = DateTime.now();
   String timestamp = now.millisecondsSinceEpoch.toString();
-  //print(timestamp);
+  print(timestamp);
   timestamp = baseConverter(timestamp);
-  //print(timestamp);
+  print(timestamp);
   String randomString = getRandString(5);
   print(randomString);
   return refLabelPrefix + timestamp + randomString;
