@@ -41,7 +41,7 @@ class MyBottomNavBarHome extends StatelessWidget {
                   padding: const EdgeInsets.only(
                       left: kDefaultPadding, right: kDefaultPadding),
                   child: Text(
-                    "Total: ${cartItemController.total[0]}",
+                    "Total: ${cartItemController.total[0].toStringAsFixed(2)}",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),

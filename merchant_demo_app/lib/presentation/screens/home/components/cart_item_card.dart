@@ -21,9 +21,9 @@ class CartItemCard extends StatelessWidget {
   final double price;
   final VoidCallback press;
   final CartItemController cartItemController;
-
   @override
   Widget build(BuildContext context) {
+    final priceAsString = price.toStringAsFixed(2);
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.only(
@@ -75,7 +75,7 @@ class CartItemCard extends StatelessWidget {
                       ),
                       Spacer(),
                       Text(
-                        '\$$price',
+                        '\$$priceAsString',
                         style: Theme.of(context)
                             .textTheme
                             .button!
