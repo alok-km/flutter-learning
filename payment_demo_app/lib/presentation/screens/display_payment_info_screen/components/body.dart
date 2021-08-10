@@ -31,7 +31,7 @@ class Body extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {},
-          child: Text("Decode Emv QR Code"),
+          child: Text("Confirm Payment"),
         ),
       ],
     );

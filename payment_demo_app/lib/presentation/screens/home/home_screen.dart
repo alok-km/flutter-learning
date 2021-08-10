@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payment_demo_app/components/build_app_bar.dart';
 import 'package:payment_demo_app/services/share_service.dart';
-
 import 'components/body.dart';
 
 class HomeScreen extends StatefulWidget {
