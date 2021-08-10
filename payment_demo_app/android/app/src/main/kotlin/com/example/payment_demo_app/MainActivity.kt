@@ -8,8 +8,8 @@ import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
     private var receivedData: Bundle = Bundle()
-    private var receivedDataKey: String = ""
-    private var receivedDataValue: String = ""
+    private var receivedUrl: String = ""
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +20,12 @@ class MainActivity: FlutterActivity() {
         super.configureFlutterEngine(flutterEngine)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger,
                 "com.example.payment_demo_app").setMethodCallHandler { call, result ->
-                if (call.method == "getreceivedData") {
+                if (call.method == "getReceivedData") {
                     handleIntent()
-                    result.success(receivedData)
-                    receivedData = Bundle()
+                    // result.success(receivedData)
+                    result.success(receivedUrl)
+                    // receivedData = Bundle()
+                    receivedUrl = ""
                 }
             }
     }
@@ -31,17 +33,13 @@ class MainActivity: FlutterActivity() {
 
     private fun handleIntent() {
         // intent is a property of this activity
-        // Only process the intent if it's a send intent and it's of type 'text'
         if (intent?.action == "hk.com.hkicl") {
-            println("handled 1")
-            // intent.getStringExtra(Intent.EXTRA_TEXT)?.let { intentData ->
-            // receivedData = intentData
+            println("handled the incoming intent")
             intent.getExtras()?.let { intentData ->
                 receivedData = intentData
-                println(receivedData.keySet())
-                println("handled 2")
+                receivedUrl = receivedData["url"].toString()
             }
-            // receivedDataKey = receivedData.keySet()
+            println(receivedUrl)
         }
     }
 }

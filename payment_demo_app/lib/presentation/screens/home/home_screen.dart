@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:payment_demo_app/components/build_app_bar.dart';
 import 'package:payment_demo_app/services/share_service.dart';
 
+import 'components/body.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -10,7 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  String _receivedText = "";
+  String _receivedUrl = "";
 
   @override
   void initState() {
@@ -20,17 +22,17 @@ class _HomeScreenState extends State<HomeScreen> {
     ShareService()
       // Register a callback so that we handle shared data if it arrives while the
       // app is running
-      ..onDataReceived = _handleSharedData
+      ..onDataReceived = _handleReceivedData
 
       // Check to see if there is any shared data already, meaning that the app
       // was launched via sharing.
-      ..getSharedData().then(_handleSharedData);
+      ..getReceivedData().then(_handleReceivedData);
   }
 
   /// Handles any shared data we may receive.
-  void _handleSharedData(String receivedData) {
+  void _handleReceivedData(String receivedUrl) {
     setState(() {
-      _receivedText = receivedData;
+      _receivedUrl = receivedUrl;
     });
   }
 
@@ -38,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Text(_receivedText),
+      body: Body(receivedUrl: _receivedUrl),
     );
   }
 }

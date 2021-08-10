@@ -8,7 +8,7 @@ class ShareService {
     // shared data
     SystemChannels.lifecycle.setMessageHandler((msg) async {
       if (msg?.contains("resumed") ?? false) {
-        getSharedData().then((String data) {
+        getReceivedData().then((String data) {
           // Nothing was shared with us :(
           if (data.isEmpty) {
             return;
@@ -24,9 +24,9 @@ class ShareService {
 
   /// Invoke a method on our platform, telling it to give us any shared data
   /// it has
-  Future<String> getSharedData() async {
+  Future<String> getReceivedData() async {
     return await MethodChannel('com.example.payment_demo_app')
-            .invokeMethod("getSharedData") ??
+            .invokeMethod("getReceivedData") ??
         "";
   }
 }
