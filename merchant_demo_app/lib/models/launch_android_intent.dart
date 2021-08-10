@@ -5,5 +5,5 @@ void launchAndroidIntent(String payload) async {
     action: "hk.com.hkicl",
     arguments: {'url': payload},
   );
-  await intent.launch();
+  await intent.launchChooser("Choose a Payment App");
 }
