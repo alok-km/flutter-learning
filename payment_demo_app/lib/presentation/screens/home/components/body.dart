@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:payment_demo_app/models/check_payment_confirmation.dart';
 import 'package:payment_demo_app/models/decode_emv_qr_code.dart';
 import 'package:payment_demo_app/models/retrieve_app_to_app_token.dart';
 
@@ -13,6 +14,7 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   String decryptedUrl = "";
   var paymentInfo = new Map();
+
   getPayload() async {
     final response = await retrieveAppToAppToken(widget.receivedUrl);
     setState(() {
@@ -42,6 +44,16 @@ class _BodyState extends State<Body> {
     await getPaymentInfo();
   }
 
+  getPaymentConfirmation() {
+    checkPaymentConfirmation(
+      paymentInfo["Currency"],
+      paymentInfo["Amount"],
+      paymentInfo["Beneficiary Bank Code"],
+      paymentInfo["Proxy Identifier"],
+      paymentInfo["Proxy Identifier Type"],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     initialize();
@@ -68,7 +80,9 @@ class _BodyState extends State<Body> {
           ),
         ),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            getPaymentConfirmation();
+          },
           child: Text("Confirm Payment"),
         ),
       ],

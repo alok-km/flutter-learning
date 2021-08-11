@@ -13,3 +13,5 @@ const HOME = "/home";
 
 //URLs we use in our app
 const decodeEmvQRCodeUrl = "http://10.3.60.45:5080/decodeEmvQRCode";
+const checkPaymentConfirmationUrl =
+    "http://10.3.60.45:8123/paymentResultNotification";
