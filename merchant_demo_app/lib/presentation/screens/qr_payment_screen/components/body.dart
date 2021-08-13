@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
@@ -21,30 +22,36 @@ class _BodyState extends State<Body> {
   bool generatedQr = false;
   getRawQrData() async {
     String refLabel = generateRefLabel();
-    await generateRawQrData(
-      dropDownValue,
-      amountController.text,
-      refLabel,
-    ).then(
-      (value) => {
-        setState(() {
-          rawQrData = value;
-          generatedQr = true;
-        })
-      },
-    );
+    try {
+      await generateRawQrData(
+        dropDownValue,
+        amountController.text,
+        refLabel,
+      ).then(
+        (value) => {
+          setState(() {
+            rawQrData = value;
+            generatedQr = true;
+          })
+        },
+      );
+    } catch (err) {
+      generatedQr = false;
+      Fluttertoast.showToast(
+        msg: "There was a problem while calling the API",
+        toastLength: Toast.LENGTH_LONG,
+      );
+    }
+
     if (await generatedQr) {
       Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => DisplayQRCode(
-            rawQrData: rawQrData,
-            dropDownValue: dropDownValue,
-            amountController: amountController,
-          ),
-          settings: RouteSettings(
-            arguments: rawQrData,
-          ),
+              rawQrData: rawQrData,
+              dropDownValue: dropDownValue,
+              amountController: amountController),
+          settings: RouteSettings(arguments: rawQrData),
         ),
       );
     }

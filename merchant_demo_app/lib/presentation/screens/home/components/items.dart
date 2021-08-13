@@ -18,7 +18,7 @@ class ItemList extends StatelessWidget {
             children: [
               CartItemCard(
                 image: "lib/assets/images/nike.jpg",
-                title: "Nike AF1 Mid",
+                title: "Nike AF1",
                 brand: "Nike",
                 price: cartItemController.prices[0],
                 press: () {},
@@ -27,7 +27,7 @@ class ItemList extends StatelessWidget {
               ),
               CartItemCard(
                 image: "lib/assets/images/echo.jpg",
-                title: "Echo Home",
+                title: "Echo",
                 brand: "Amazon",
                 price: cartItemController.prices[1],
                 press: () {},
@@ -41,7 +41,7 @@ class ItemList extends StatelessWidget {
               CartItemCard(
                 image: "lib/assets/images/perfume.jpg",
                 title: "Parfum",
-                brand: "Jo Malone",
+                brand: "JoMalone",
                 price: cartItemController.prices[2],
                 press: () {},
                 cartItemController: cartItemController,
@@ -50,7 +50,7 @@ class ItemList extends StatelessWidget {
               CartItemCard(
                 image: "lib/assets/images/headphones.jpg",
                 title: "Studio 3",
-                brand: "Beats by Dre",
+                brand: "Beats",
                 price: cartItemController.prices[3],
                 press: () {},
                 cartItemController: cartItemController,

@@ -36,7 +36,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               child: Row(
                 children: [
                   Text(
-                    'Hi Alok!',
+                    'Hi iAspec!',
                     style: Theme.of(context).textTheme.headline5!.copyWith(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),

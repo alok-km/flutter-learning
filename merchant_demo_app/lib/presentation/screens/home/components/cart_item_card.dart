@@ -31,7 +31,7 @@ class CartItemCard extends StatelessWidget {
         top: kDefaultPadding / 2,
         bottom: kDefaultPadding * 2.5,
       ),
-      width: size.width * 0.4,
+      width: size.width * 0.435,
       child: Column(
         children: [
           Image.asset(image),
@@ -87,22 +87,25 @@ class CartItemCard extends StatelessWidget {
                     () => Row(
                       children: [
                         Spacer(),
-                        TextButton(
-                          onPressed: () {
-                            if (cartItemController.cartItemCount[index] > 0) {
-                              cartItemController.total[0] = double.parse(
-                                  (cartItemController.total[0] -
-                                          cartItemController.prices[index])
-                                      .toStringAsFixed(2));
-                            }
-                            cartItemController.decrement(index);
-                          },
-                          child: Text(
-                            "-",
-                            style: Theme.of(context)
-                                .textTheme
-                                .button!
-                                .copyWith(color: kPrimaryColor),
+                        Container(
+                          width: 30,
+                          child: TextButton(
+                            onPressed: () {
+                              if (cartItemController.cartItemCount[index] > 0) {
+                                cartItemController.total[0] = double.parse(
+                                    (cartItemController.total[0] -
+                                            cartItemController.prices[index])
+                                        .toStringAsFixed(2));
+                              }
+                              cartItemController.decrement(index);
+                            },
+                            child: Text(
+                              "-",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .button!
+                                  .copyWith(color: kPrimaryColor),
+                            ),
                           ),
                         ),
                         Spacer(),
@@ -114,20 +117,23 @@ class CartItemCard extends StatelessWidget {
                               .copyWith(color: kPrimaryColor),
                         ),
                         Spacer(),
-                        TextButton(
-                          onPressed: () {
-                            cartItemController.total[0] = double.parse(
-                                (cartItemController.total[0] +
-                                        cartItemController.prices[index])
-                                    .toStringAsFixed(2));
-                            cartItemController.increment(index);
-                          },
-                          child: Text(
-                            "+",
-                            style: Theme.of(context)
-                                .textTheme
-                                .button!
-                                .copyWith(color: kPrimaryColor),
+                        Container(
+                          width: 30,
+                          child: TextButton(
+                            onPressed: () {
+                              cartItemController.total[0] = double.parse(
+                                  (cartItemController.total[0] +
+                                          cartItemController.prices[index])
+                                      .toStringAsFixed(2));
+                              cartItemController.increment(index);
+                            },
+                            child: Text(
+                              "+",
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .button!
+                                  .copyWith(color: kPrimaryColor),
+                            ),
                           ),
                         ),
                         Spacer(),

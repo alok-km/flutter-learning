@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/io_client.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 
@@ -33,6 +34,10 @@ Future generateRawQrData(String currency, String price, String refLabel) async {
     //print(decodedResponse);
     return decodedResponse['data']['rawQrData'];
   } catch (err) {
+    Fluttertoast.showToast(
+      msg: "There was a problem while calling the API",
+      toastLength: Toast.LENGTH_LONG,
+    );
     print(err);
   }
 }

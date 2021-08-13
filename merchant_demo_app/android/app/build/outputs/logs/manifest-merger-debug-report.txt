@@ -6,6 +6,7 @@ INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\m
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
 MERGED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-46:12
+MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\merchant_demo_app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:path_provider] C:\Users\alok\flutter-projects\merchant_demo_app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
@@ -152,6 +153,8 @@ INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\m
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\main\AndroidManifest.xml
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\merchant_demo_app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44

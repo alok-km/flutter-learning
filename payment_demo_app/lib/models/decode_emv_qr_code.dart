@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/io_client.dart';
 import 'package:payment_demo_app/constants/strings.dart';
 
@@ -24,6 +25,10 @@ Future decodeEmvQRCode(String rawQrData) async {
     Map<String, dynamic> decodedResponse = jsonDecode(response.body);
     return decodedResponse["data"];
   } catch (err) {
+    Fluttertoast.showToast(
+      msg: "There was a problem while calling the API",
+      toastLength: Toast.LENGTH_LONG,
+    );
     print(err);
   }
 }

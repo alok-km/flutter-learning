@@ -25,17 +25,15 @@ class _BodyState extends State<Body> {
 
   getPaymentInfo() async {
     final response = await decodeEmvQRCode(decryptedUrl);
-    setState(() {
-      paymentInfo["Currency"] = response["trxCurrency"];
-      paymentInfo["Amount"] = response["trxAmt"];
-      paymentInfo["Reference Label"] = response["referenceLabel"];
-      paymentInfo["Proxy Identifier"] = response["proxyId"];
-      paymentInfo["Proxy Identifier Type"] = response["proxyIdType"];
-      if (paymentInfo["Proxy Identifier Type"] == "EMAIL_ADDRESS") {
-        paymentInfo["Proxy Identifier Type"] = "Email Address";
-      }
-      paymentInfo["Beneficiary Bank Code"] = response["clearingCode"];
-    });
+    paymentInfo["Currency"] = response["trxCurrency"];
+    paymentInfo["Amount"] = response["trxAmt"];
+    paymentInfo["Reference Label"] = response["referenceLabel"];
+    paymentInfo["Proxy Identifier"] = response["proxyId"];
+    paymentInfo["Proxy Identifier Type"] = response["proxyIdType"];
+    if (paymentInfo["Proxy Identifier Type"] == "EMAIL_ADDRESS") {
+      paymentInfo["Proxy Identifier Type"] = "Email Address";
+    }
+    paymentInfo["Beneficiary Bank Code"] = response["clearingCode"];
     print(paymentInfo);
   }
 

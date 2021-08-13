@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/io_client.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
@@ -32,6 +33,10 @@ Future generateAppToAppToken(String refLabel) async {
     Map<String, dynamic> decodedResponse = jsonDecode(response.body);
     return decodedResponse['token'];
   } catch (err) {
+    Fluttertoast.showToast(
+      msg: "There was a problem while calling the API",
+      toastLength: Toast.LENGTH_LONG,
+    );
     print(err);
   }
 }

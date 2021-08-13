@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
@@ -15,24 +16,35 @@ class AppToAppPaymentBtn extends StatefulWidget {
 class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
   //VARIABLES
   String token = "";
+  bool flag = false;
 
   //FUNCTIONS
   void pressAppToAppPaymentBtn() async {
     await getToken();
-    Navigator.of(context).push(MaterialPageRoute(
-      builder: (context) => WaitForPaymentConfirmation(token: token),
-    ));
+    if (flag)
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context) => WaitForPaymentConfirmation(token: token),
+      ));
   }
 
   getToken() async {
-    String refLabel = generateRefLabel();
-    print(refLabel);
-    final tokenResult = await generateAppToAppToken(refLabel);
-    print(tokenResult);
-    //for converting the future returned from generateAppToAppToken(refLabel) to string
-    setState(() {
-      token = tokenResult;
-    });
+    try {
+      String refLabel = generateRefLabel();
+      print(refLabel);
+      final tokenResult = await generateAppToAppToken(refLabel);
+      print(tokenResult);
+      //for converting the future returned from generateAppToAppToken(refLabel) to string
+      setState(() {
+        token = tokenResult;
+      });
+      flag = true;
+    } catch (err) {
+      Fluttertoast.showToast(
+        msg: "There was a problem while calling the API",
+        toastLength: Toast.LENGTH_LONG,
+      );
+      flag = false;
+    }
   }
 
   @override

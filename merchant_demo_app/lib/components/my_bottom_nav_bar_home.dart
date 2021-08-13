@@ -42,15 +42,18 @@ class MyBottomNavBarHome extends StatelessWidget {
                       left: kDefaultPadding, right: kDefaultPadding),
                   child: Text(
                     "Total: ${cartItemController.total[0].toStringAsFixed(2)}",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
                   ),
                 ),
                 Spacer(),
                 Container(
-                  width: 95,
+                  width: 80,
                   child: ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, CHECKOUT),
-                    child: Text("Checkout"),
+                    child: Text(
+                      "Checkout",
+                      style: TextStyle(fontSize: 11),
+                    ),
                   ),
                 ),
               ],
