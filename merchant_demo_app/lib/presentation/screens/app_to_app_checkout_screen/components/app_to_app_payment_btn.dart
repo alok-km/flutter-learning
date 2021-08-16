@@ -29,9 +29,9 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
 
   getToken() async {
     try {
-      String refLabel = generateRefLabel();
-      print(refLabel);
-      final tokenResult = await generateAppToAppToken(refLabel);
+      // String refLabel = generateRefLabel();
+      // print(refLabel);
+      final tokenResult = await generateAppToAppToken(generateRefLabel());
       print(tokenResult);
       //for converting the future returned from generateAppToAppToken(refLabel) to string
       setState(() {
@@ -40,7 +40,8 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
       flag = true;
     } catch (err) {
       Fluttertoast.showToast(
-        msg: "There was a problem while calling the API",
+        msg: "There was a problem while calling the API. Error Code: " +
+            "${err}",
         toastLength: Toast.LENGTH_LONG,
       );
       flag = false;

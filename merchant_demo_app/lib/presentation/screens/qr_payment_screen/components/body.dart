@@ -5,7 +5,7 @@ import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
 import 'package:merchant_demo_app/presentation/screens/display_qr_screen/display_qr_code_screen.dart';
-import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
+import 'package:merchant_demo_app/components/header_with_searchbox.dart';
 
 //ignore: must_be_immutable
 class Body extends StatefulWidget {
@@ -18,8 +18,15 @@ class _BodyState extends State<Body> {
   String dropDownValue = 'HKD';
   var items = ["HKD", "USD", "RMB", "EUR"];
   final amountController = TextEditingController();
+  bool _validateAmount = false;
   String rawQrData = '';
   bool generatedQr = false;
+  @override
+  void dispose() {
+    amountController.dispose();
+    super.dispose();
+  }
+
   getRawQrData() async {
     String refLabel = generateRefLabel();
     try {
@@ -117,6 +124,11 @@ class _BodyState extends State<Body> {
                           decimal: true,
                           signed: false,
                         ),
+                        decoration: InputDecoration(
+                          labelText: 'Enter the Value',
+                          errorText:
+                              _validateAmount ? 'Amount Can\'t Be Empty' : null,
+                        ),
                       ),
                     ),
                   ],
@@ -124,7 +136,7 @@ class _BodyState extends State<Body> {
               ],
             ),
           ),
-          //. generate button
+          //3. generate button
           Padding(
             padding: const EdgeInsets.only(
               top: 20,
@@ -136,8 +148,15 @@ class _BodyState extends State<Body> {
                   BoxConstraints.tightFor(width: double.infinity, height: 40),
               child: ElevatedButton(
                 onPressed: () async {
-                  await getRawQrData();
-                  print(rawQrData);
+                  setState(() {
+                    amountController.text.isEmpty
+                        ? _validateAmount = true
+                        : _validateAmount = false;
+                  });
+                  if (!_validateAmount) {
+                    await getRawQrData();
+                    print(rawQrData);
+                  }
                 },
                 child: Text(
                   "Generate",

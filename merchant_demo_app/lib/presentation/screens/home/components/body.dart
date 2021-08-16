@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 import 'package:merchant_demo_app/presentation/screens/home/components/items.dart';
-import 'header_with_searchbox.dart';
+import '../../../../components/header_with_searchbox.dart';
 import 'cart_title_with_edit_btn.dart';
 
 class Body extends StatelessWidget {

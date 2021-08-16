@@ -7,45 +7,46 @@ INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\m
 MERGED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\main\AndroidManifest.xml:1:1-41:12
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-46:12
 MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] C:\Users\alok\flutter-projects\merchant_demo_app\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\merchant_demo_app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
 MERGED from [:path_provider] C:\Users\alok\flutter-projects\merchant_demo_app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:17:1-58:12
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f6e101ff334e2286d606ca81ce7084d2\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6f558984838f7cd3086de44bae7daccf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\411d67ca8574ef147075ad63530c2fda\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\29da210ae0b417ff99e7cf422e6c60a6\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\48965651dcf1059d3040de5883ed20f3\media-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0c918d3b97f314c3d07e1a4a867877f6\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c9535104c8af9b879ee0cdfd38826f6b\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c1b756f5b44b5edee8b851efbee1b9de\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a47e6960ff187c20622ee338cb9758a0\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b87300d6330e764a6909405b93a10a14\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9021d2f2ec1b25f2cecf263584b83df0\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e58ecbe4979c7e63144631bdcf3ac7b\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4bb555d99695283dbc0ec52df4dc58e6\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\312b5726cf139126bf5149e38848d93a\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f81f7e902f32390d8f5fd699af14179e\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9ff9fd4abdce8943a998e4ee90277cca\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e8d26a4f0f0e51e592354b9d47332f9\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e02ab1b7e14a0955c6fed7c8bf0ff3e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\739348b5a68b7caaaac1601c403d28f2\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\789ce2714da33bce98bffc897be9d125\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\5b63fcd242cf80d796ebb1816fc99f20\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2a1326954dfe32a73d61b742e87f7340\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1ae7589e8bf44a4d418d066932c0b595\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\76086c3d1310b7ab72b766ae4a71475d\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7cd75e63de183401d115dcc511871379\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c3512db3e87392afe23063a6440e63ed\jetified-threetenabp-1.2.3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\33a9a6c6620b561eb4943199458ecc11\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0d9bd162716457396cede8f27d9de131\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3865da10096176b11269e6382eca9b22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\688e2fa1f0e39426364fb1c832c30962\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e453a76e72bb96f843cf9e4102f08c21\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a976a43f8c8c72ae9d47043fce635f8f\firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e339e7cc594c58f20cb04bad407ee45d\firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\afb2a74964ec96afe81fae0b8535870e\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\81c57052b9cfce389d69eb10d82b3a39\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b59dd80e2faebd20423492d1ad223c8d\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0eee0204c345f820a5c279f44612f361\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\775ab6c2cd38d0b79fc35802dda593be\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\72708bd3ea37ad4c23d9f3fe2ccd9458\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\79d22295dc42c1337b19f473476afb9a\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2848c1511812e099f61f07c3a56e1938\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\d3e41b0a4ea87211d04b7bcf85c1ad14\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1f9d087e8e8fdad0ed6794e404f98025\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ccb76ace1f023bafd757dd2f925ee52d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7136ebf78a23845cda04dc4694a743c9\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e6948cde2e633d3a08835b37886b2684\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ebe49be5a1509fc14b2dd0d845cb68eb\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\28e3eccb02ac5c7ccda8dddd05bff5eb\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4ac4a740a1fdfdebb3597244784da8d1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\723416c2387de76dead8ba19ed6f9794\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bea9541204f1279b91cc40302c8573c4\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\40cb0be1b0597659c09dfe0ea3c17e29\threetenabp-1.2.3\AndroidManifest.xml:2:1-9:12
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -71,36 +72,36 @@ MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\mercha
 MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\merchant_demo_app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6f558984838f7cd3086de44bae7daccf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6f558984838f7cd3086de44bae7daccf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0c918d3b97f314c3d07e1a4a867877f6\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0c918d3b97f314c3d07e1a4a867877f6\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c1b756f5b44b5edee8b851efbee1b9de\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c1b756f5b44b5edee8b851efbee1b9de\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a47e6960ff187c20622ee338cb9758a0\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a47e6960ff187c20622ee338cb9758a0\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:24:5-89
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\5b63fcd242cf80d796ebb1816fc99f20\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\5b63fcd242cf80d796ebb1816fc99f20\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c3512db3e87392afe23063a6440e63ed\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
-MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c3512db3e87392afe23063a6440e63ed\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0d9bd162716457396cede8f27d9de131\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0d9bd162716457396cede8f27d9de131\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a976a43f8c8c72ae9d47043fce635f8f\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a976a43f8c8c72ae9d47043fce635f8f\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\afb2a74964ec96afe81fae0b8535870e\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\afb2a74964ec96afe81fae0b8535870e\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\81c57052b9cfce389d69eb10d82b3a39\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\81c57052b9cfce389d69eb10d82b3a39\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ebe49be5a1509fc14b2dd0d845cb68eb\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ebe49be5a1509fc14b2dd0d845cb68eb\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\40cb0be1b0597659c09dfe0ea3c17e29\threetenabp-1.2.3\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\40cb0be1b0597659c09dfe0ea3c17e29\threetenabp-1.2.3\AndroidManifest.xml:7:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\main\AndroidManifest.xml:4:9-37
 	android:icon
@@ -155,6 +156,8 @@ MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_a
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] C:\Users\alok\flutter-projects\merchant_demo_app\build\fluttertoast\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\alok\flutter-projects\merchant_demo_app\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\alok\flutter-projects\merchant_demo_app\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:android_intent_plus] C:\Users\alok\flutter-projects\merchant_demo_app\build\android_intent_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\alok\flutter-projects\merchant_demo_app\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
@@ -163,76 +166,76 @@ MERGED from [:path_provider] C:\Users\alok\flutter-projects\merchant_demo_app\bu
 MERGED from [:path_provider] C:\Users\alok\flutter-projects\merchant_demo_app\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f6e101ff334e2286d606ca81ce7084d2\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f6e101ff334e2286d606ca81ce7084d2\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6f558984838f7cd3086de44bae7daccf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6f558984838f7cd3086de44bae7daccf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\411d67ca8574ef147075ad63530c2fda\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\411d67ca8574ef147075ad63530c2fda\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\29da210ae0b417ff99e7cf422e6c60a6\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\29da210ae0b417ff99e7cf422e6c60a6\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\48965651dcf1059d3040de5883ed20f3\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\48965651dcf1059d3040de5883ed20f3\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0c918d3b97f314c3d07e1a4a867877f6\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0c918d3b97f314c3d07e1a4a867877f6\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c9535104c8af9b879ee0cdfd38826f6b\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c9535104c8af9b879ee0cdfd38826f6b\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c1b756f5b44b5edee8b851efbee1b9de\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c1b756f5b44b5edee8b851efbee1b9de\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a47e6960ff187c20622ee338cb9758a0\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a47e6960ff187c20622ee338cb9758a0\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b87300d6330e764a6909405b93a10a14\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b87300d6330e764a6909405b93a10a14\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9021d2f2ec1b25f2cecf263584b83df0\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9021d2f2ec1b25f2cecf263584b83df0\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e58ecbe4979c7e63144631bdcf3ac7b\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e58ecbe4979c7e63144631bdcf3ac7b\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4bb555d99695283dbc0ec52df4dc58e6\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4bb555d99695283dbc0ec52df4dc58e6\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\312b5726cf139126bf5149e38848d93a\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\312b5726cf139126bf5149e38848d93a\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\588415077bd2e9541ae9225b9e0b51a7\core-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f81f7e902f32390d8f5fd699af14179e\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f81f7e902f32390d8f5fd699af14179e\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9ff9fd4abdce8943a998e4ee90277cca\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9ff9fd4abdce8943a998e4ee90277cca\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e8d26a4f0f0e51e592354b9d47332f9\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e8d26a4f0f0e51e592354b9d47332f9\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e02ab1b7e14a0955c6fed7c8bf0ff3e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\6e02ab1b7e14a0955c6fed7c8bf0ff3e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\739348b5a68b7caaaac1601c403d28f2\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\739348b5a68b7caaaac1601c403d28f2\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\789ce2714da33bce98bffc897be9d125\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\789ce2714da33bce98bffc897be9d125\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\5b63fcd242cf80d796ebb1816fc99f20\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\5b63fcd242cf80d796ebb1816fc99f20\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2a1326954dfe32a73d61b742e87f7340\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2a1326954dfe32a73d61b742e87f7340\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1ae7589e8bf44a4d418d066932c0b595\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1ae7589e8bf44a4d418d066932c0b595\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\76086c3d1310b7ab72b766ae4a71475d\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\76086c3d1310b7ab72b766ae4a71475d\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7cd75e63de183401d115dcc511871379\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7cd75e63de183401d115dcc511871379\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c3512db3e87392afe23063a6440e63ed\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
-MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c3512db3e87392afe23063a6440e63ed\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\33a9a6c6620b561eb4943199458ecc11\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\33a9a6c6620b561eb4943199458ecc11\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0d9bd162716457396cede8f27d9de131\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0d9bd162716457396cede8f27d9de131\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3865da10096176b11269e6382eca9b22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3865da10096176b11269e6382eca9b22\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\688e2fa1f0e39426364fb1c832c30962\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\688e2fa1f0e39426364fb1c832c30962\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e453a76e72bb96f843cf9e4102f08c21\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e453a76e72bb96f843cf9e4102f08c21\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a976a43f8c8c72ae9d47043fce635f8f\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\a976a43f8c8c72ae9d47043fce635f8f\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e339e7cc594c58f20cb04bad407ee45d\firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e339e7cc594c58f20cb04bad407ee45d\firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\afb2a74964ec96afe81fae0b8535870e\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\afb2a74964ec96afe81fae0b8535870e\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\81c57052b9cfce389d69eb10d82b3a39\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\81c57052b9cfce389d69eb10d82b3a39\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b59dd80e2faebd20423492d1ad223c8d\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\b59dd80e2faebd20423492d1ad223c8d\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0eee0204c345f820a5c279f44612f361\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\0eee0204c345f820a5c279f44612f361\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\775ab6c2cd38d0b79fc35802dda593be\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\775ab6c2cd38d0b79fc35802dda593be\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\72708bd3ea37ad4c23d9f3fe2ccd9458\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\72708bd3ea37ad4c23d9f3fe2ccd9458\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\79d22295dc42c1337b19f473476afb9a\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\79d22295dc42c1337b19f473476afb9a\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\04728038f89d0a61534603639d3a2e36\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2848c1511812e099f61f07c3a56e1938\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2848c1511812e099f61f07c3a56e1938\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\d3e41b0a4ea87211d04b7bcf85c1ad14\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\d3e41b0a4ea87211d04b7bcf85c1ad14\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1f9d087e8e8fdad0ed6794e404f98025\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\1f9d087e8e8fdad0ed6794e404f98025\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ccb76ace1f023bafd757dd2f925ee52d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ccb76ace1f023bafd757dd2f925ee52d\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7136ebf78a23845cda04dc4694a743c9\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\7136ebf78a23845cda04dc4694a743c9\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e6948cde2e633d3a08835b37886b2684\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\e6948cde2e633d3a08835b37886b2684\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ebe49be5a1509fc14b2dd0d845cb68eb\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ebe49be5a1509fc14b2dd0d845cb68eb\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\28e3eccb02ac5c7ccda8dddd05bff5eb\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\28e3eccb02ac5c7ccda8dddd05bff5eb\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4ac4a740a1fdfdebb3597244784da8d1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4ac4a740a1fdfdebb3597244784da8d1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\723416c2387de76dead8ba19ed6f9794\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\723416c2387de76dead8ba19ed6f9794\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bea9541204f1279b91cc40302c8573c4\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bea9541204f1279b91cc40302c8573c4\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\40cb0be1b0597659c09dfe0ea3c17e29\threetenabp-1.2.3\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\40cb0be1b0597659c09dfe0ea3c17e29\threetenabp-1.2.3\AndroidManifest.xml:5:5-44
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml
 INJECTED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
@@ -245,34 +248,34 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml:6:5-66
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
 	android:name
 		ADDED from C:\Users\alok\flutter-projects\merchant_demo_app\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
 	android:name
 		ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
@@ -313,20 +316,20 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
-MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
-MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
-MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:51:13-37
 	tools:targetApi
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:37:13-32
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:37:13-32
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 	android:name
 		ADDED from [:firebase_messaging] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
@@ -390,88 +393,88 @@ ADDED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\bui
 	android:name
 		ADDED from [:firebase_core] C:\Users\alok\flutter-projects\merchant_demo_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
-MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\16f2e2db89430649388a2e5cd7141143\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ed9517ffeed3092f27e7d55581917257\play-services-cloud-messaging-16.0.0\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
 	android:permission
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
 meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
-ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
 	android:value
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\da2d1b74d30afa05063e834a16c6f1f6\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+		ADDED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\4f2c1011579ccd9a2059fce65c231ff8\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
 meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
-ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
 	android:value
-		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\bf5f162de7082f24cdbf2b8369b6fef2\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cc66430a2be79e40df8bd8a6eb1e58c8\firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
 meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
-ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
 	android:value
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
 	android:name
-		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\cf89989fb05492a7c07082d810bb308f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\043b3cbe8b90e6302790e30b03238c6a\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
 meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
-ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
 	android:value
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
 	android:name
-		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\f8eca865549958869ab507ebbb2586cf\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\ac7bd34bb796c481287bf1eadb271002\firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
 	android:directBootAware
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9e1f12906488c248b9c791875afc8253\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\3be69d8a97c5dca25daf5cccfc965e57\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\9b671c250c69f03d1629c33ba2206b8b\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\05c3558b1d70e933ea49b785d43bbb53\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
 	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
 receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\2fe67ecc456585d75a6a0a1425ecbd27\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\alok\.gradle\caches\transforms-2\files-2.1\c89048ea201eb61bc121a520fe2c2224\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132

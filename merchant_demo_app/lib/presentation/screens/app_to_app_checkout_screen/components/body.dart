@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
+import 'package:merchant_demo_app/components/header_with_searchbox.dart';
 import 'fps_logo_and_price.dart';
 import 'app_to_app_payment_btn.dart';
 

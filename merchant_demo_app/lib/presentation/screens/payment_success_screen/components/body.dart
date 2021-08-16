@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
-import 'package:merchant_demo_app/presentation/screens/home/components/header_with_searchbox.dart';
+import 'package:merchant_demo_app/components/header_with_searchbox.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);

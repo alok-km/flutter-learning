@@ -5,12 +5,15 @@ import 'package:http/io_client.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 import 'package:get/get.dart';
+import 'package:merchant_demo_app/controllers/configuration_controller.dart';
 
 Future generateAppToAppToken(String refLabel) async {
   final CartItemController cartItemController = Get.find();
+  final ConfigurationController configurationController = Get.find();
+
   final body = jsonEncode({
-    "proxyId": "dev@iaspec.com",
-    "proxyIdType": "EMAL",
+    "proxyId": "${configurationController.properties[0]}",
+    "proxyIdType": "${configurationController.properties[1]}",
     "merchantTimeout": 1665639120000,
     "transactionCcy": "HKD",
     "transactionAmount": "${cartItemController.total[0]}",
@@ -34,7 +37,7 @@ Future generateAppToAppToken(String refLabel) async {
     return decodedResponse['token'];
   } catch (err) {
     Fluttertoast.showToast(
-      msg: "There was a problem while calling the API",
+      msg: "There was a problem while calling the API. Error Code: " + "${err}",
       toastLength: Toast.LENGTH_LONG,
     );
     print(err);

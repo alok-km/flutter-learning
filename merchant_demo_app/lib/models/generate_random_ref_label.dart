@@ -1,10 +1,10 @@
 import 'dart:math';
 
-var RANDOM = Random.secure();
+import 'package:get/get.dart';
+import 'package:merchant_demo_app/controllers/configuration_controller.dart';
 
-String getPrefix() {
-  return 'A01';
-}
+ConfigurationController configurationController = Get.find();
+var RANDOM = Random.secure();
 
 String getRandString(int len) {
   var randomString = List<String>.generate(len, (i) => getRandomChar());
@@ -32,7 +32,6 @@ String baseConverter(String string) {
 }
 
 String generateRefLabel() {
-  String refLabelPrefix = getPrefix();
   final DateTime now = DateTime.now();
   String timestamp = now.millisecondsSinceEpoch.toString();
   print(timestamp);
@@ -40,5 +39,5 @@ String generateRefLabel() {
   print(timestamp);
   String randomString = getRandString(5);
   print(randomString);
-  return refLabelPrefix + timestamp + randomString;
+  return configurationController.properties[2] + timestamp + randomString;
 }

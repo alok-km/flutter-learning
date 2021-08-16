@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/presentation/screens/configuration_screen/configuration_screen.dart';
 
 Drawer buildDrawer(BuildContext context) {
@@ -8,7 +9,7 @@ Drawer buildDrawer(BuildContext context) {
       children: [
         const DrawerHeader(
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: kPrimaryColor,
           ),
           child: Text('Configure the App'),
         ),
