@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/models/generate_raw_qr_data.dart';
@@ -43,11 +42,7 @@ class _BodyState extends State<Body> {
         },
       );
     } catch (err) {
-      generatedQr = false;
-      Fluttertoast.showToast(
-        msg: "There was a problem while calling the API",
-        toastLength: Toast.LENGTH_LONG,
-      );
+      print(err);
     }
 
     if (await generatedQr) {

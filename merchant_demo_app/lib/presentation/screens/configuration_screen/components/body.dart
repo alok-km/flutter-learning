@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:merchant_demo_app/components/build_configure_screen_arrow_row.dart';
+import 'package:merchant_demo_app/presentation/screens/configuration_screen/components/build_configure_screen_arrow_row.dart';
 import 'package:merchant_demo_app/controllers/configuration_controller.dart';
 
 //ignore: must_be_immutable

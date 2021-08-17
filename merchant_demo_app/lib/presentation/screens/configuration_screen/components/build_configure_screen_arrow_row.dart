@@ -11,10 +11,16 @@ GestureDetector buildConfigureScreenArrowRow(
   var propertyIndex = null;
   if (property == "proxyId") {
     propertyIndex = 0;
+    print("Through property index: ");
+    print(configurationController.properties[propertyIndex]);
   } else if (property == "proxyIdType") {
     propertyIndex = 1;
+    print("Through property index: ");
+    print(configurationController.properties[propertyIndex]);
   } else {
     propertyIndex = 2;
+    print("Through property index: ");
+    print(configurationController.properties[propertyIndex]);
   }
   return GestureDetector(
     onTap: () {
@@ -65,18 +71,36 @@ GestureDetector buildConfigureScreenArrowRow(
     },
     child: Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Column(
         children: [
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
-              color: Colors.grey[600],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.grey[600],
+                ),
+              ),
+              Icon(Icons.edit, color: Colors.grey),
+            ],
           ),
-          Icon(Icons.arrow_forward_ios, color: Colors.grey),
+          Row(
+            children: [
+              Obx(
+                () => Text(
+                  "Current: ${configurationController.properties[propertyIndex]}",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey[600],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     ),

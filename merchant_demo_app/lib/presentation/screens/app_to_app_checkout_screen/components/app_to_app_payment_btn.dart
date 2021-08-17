@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
@@ -29,8 +28,6 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
 
   getToken() async {
     try {
-      // String refLabel = generateRefLabel();
-      // print(refLabel);
       final tokenResult = await generateAppToAppToken(generateRefLabel());
       print(tokenResult);
       //for converting the future returned from generateAppToAppToken(refLabel) to string
@@ -39,12 +36,7 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
       });
       flag = true;
     } catch (err) {
-      Fluttertoast.showToast(
-        msg: "There was a problem while calling the API. Error Code: " +
-            "${err}",
-        toastLength: Toast.LENGTH_LONG,
-      );
-      flag = false;
+      print(err);
     }
   }
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 import 'package:get/get.dart';
+import 'package:collection/collection.dart';
 
 //ignore: must_be_immutable
 class MyBottomNavBarHome extends StatelessWidget {
@@ -49,7 +51,18 @@ class MyBottomNavBarHome extends StatelessWidget {
                 Container(
                   width: 80,
                   child: ElevatedButton(
-                    onPressed: () => Navigator.pushNamed(context, CHECKOUT),
+                    onPressed: () {
+                      if (cartItemController.cartItemCount.sum > 0) {
+                        Navigator.pushNamed(context, CHECKOUT);
+                      } else {
+                        Fluttertoast.showToast(
+                          msg: "There are no items in the shopping cart.",
+                          toastLength: Toast.LENGTH_LONG,
+                          backgroundColor: Colors.grey[900],
+                          textColor: Colors.redAccent[400],
+                        );
+                      }
+                    },
                     child: Text(
                       "Checkout",
                       style: TextStyle(fontSize: 11),
@@ -74,7 +87,9 @@ class MyBottomNavBarHome extends StatelessWidget {
                   icon: Image.asset("lib/assets/icons/home.png"),
                 ),
                 IconButton(
-                  onPressed: () => Navigator.pushNamed(context, QRPAYMENT),
+                  onPressed: () {
+                    Navigator.pushNamed(context, QRPAYMENT);
+                  },
                   icon: Image.asset("lib/assets/icons/qr-code.png"),
                 ),
               ],

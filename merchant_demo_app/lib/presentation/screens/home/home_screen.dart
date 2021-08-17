@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:merchant_demo_app/components/build_app_bar.dart';
 import 'package:merchant_demo_app/components/drawer.dart';
-import 'package:merchant_demo_app/components/my_bottom_nav_bar_home.dart';
+import 'package:merchant_demo_app/presentation/screens/home/components/my_bottom_nav_bar_home.dart';
 import 'package:merchant_demo_app/controllers/cart_item_controller.dart';
 import 'package:merchant_demo_app/controllers/configuration_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,11 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
   final CartItemController cartItemController = Get.put(CartItemController());
   final ConfigurationController configurationController =
       Get.put(ConfigurationController());
-  setDefaultAppToAppTokenValues() {
-    configurationController.properties[0] = "default@domain.com";
-    configurationController.properties[1] = "DFLT";
-    configurationController.properties[2] = "DFLT";
-  }
 
   getDataFromSharedPrefs() async {
     try {
@@ -38,24 +33,24 @@ class _HomeScreenState extends State<HomeScreen> {
             decodedPropertyDataFromSharedPrefs[0];
         print(configurationController.properties[0]);
       } catch (err) {
-        print("No ProxyID in Shared Preferences");
+        print("No ProxyID in Shared Preferences, error: ${err}.");
       }
       try {
         configurationController.properties[1] =
             decodedPropertyDataFromSharedPrefs[1];
         print(configurationController.properties[1]);
       } catch (err) {
-        print("No ProxyIDType in Shared Preferences");
+        print("No ProxyIDType in Shared Preferences, error: ${err}.");
       }
       try {
         configurationController.properties[2] =
             decodedPropertyDataFromSharedPrefs[2];
         print(configurationController.properties[2]);
       } catch (err) {
-        print("No EndToEndPrefix in Shared Preferences");
+        print("No EndToEndPrefix in Shared Preferences, error: ${err}.");
       }
     } catch (err) {
-      print("No data in Shared Preferences");
+      print("No data in Shared Preferences, error: ${err}.");
     }
   }
 
