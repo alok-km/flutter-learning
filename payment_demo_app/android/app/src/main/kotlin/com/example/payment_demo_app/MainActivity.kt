@@ -39,7 +39,7 @@ class MainActivity: FlutterActivity() {
                 receivedData = intentData
                 receivedUrl = receivedData["url"].toString()
             }
-            println(receivedUrl)
+            println("receivedUrl: " + receivedUrl)
         }
     }
 }

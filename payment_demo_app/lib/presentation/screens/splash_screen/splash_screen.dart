@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:payment_demo_app/presentation/screens/home/home_screen.dart';
+import 'package:payment_demo_app/presentation/screens/wait_for_received_url/wait_for_retrieval.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 0), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => HomeScreen(),
+          builder: (_) => WaitForReceivedUrlScreen(),
         ),
       );
     });

@@ -20,10 +20,13 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
   //FUNCTIONS
   void pressAppToAppPaymentBtn() async {
     await getToken();
-    if (flag)
-      Navigator.of(context).push(MaterialPageRoute(
-        builder: (context) => WaitForPaymentConfirmation(token: token),
-      ));
+    if (flag) {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => WaitForPaymentConfirmation(token: token),
+        ),
+      );
+    }
   }
 
   getToken() async {
