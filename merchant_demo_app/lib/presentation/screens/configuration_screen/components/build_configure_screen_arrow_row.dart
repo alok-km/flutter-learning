@@ -41,28 +41,34 @@ GestureDetector buildConfigureScreenArrowRow(
                     //     configurationController.properties[propertyIndex],
                   ),
                 ),
-                TextButton(
-                  onPressed: () async {
-                    configurationController.properties[propertyIndex] =
-                        propertyController.text;
-                    print(configurationController.properties[propertyIndex]);
-                    SharedPreferences prefs =
-                        await SharedPreferences.getInstance();
-                    prefs.setString(
-                      "AppToApp_Request_Properties",
-                      json.encode(configurationController.properties),
-                    );
-                  },
-                  child: Text("Save"),
-                )
               ],
             ),
             actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: Text("Close"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(
+                    onPressed: () async {
+                      configurationController.properties[propertyIndex] =
+                          propertyController.text;
+                      print(configurationController.properties[propertyIndex]);
+                      SharedPreferences prefs =
+                          await SharedPreferences.getInstance();
+                      prefs.setString(
+                        "AppToApp_Request_Properties",
+                        json.encode(configurationController.properties),
+                      );
+                      Navigator.of(context).pop();
+                    },
+                    child: Text("Save"),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Text("Close"),
+                  ),
+                ],
               )
             ],
           );
