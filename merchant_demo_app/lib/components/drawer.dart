@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 import 'package:merchant_demo_app/presentation/screens/configuration_screen/configuration_screen.dart';
+import 'package:merchant_demo_app/presentation/screens/show_payment_data_screen/show_payment_data_screen.dart';
 
 Drawer buildDrawer(BuildContext context) {
   return Drawer(
@@ -23,9 +24,13 @@ Drawer buildDrawer(BuildContext context) {
           },
         ),
         ListTile(
-          title: const Text('Dummy Screen Title'),
+          title: const Text('Payment Records'),
           trailing: Icon(Icons.arrow_forward),
-          onTap: () {},
+          onTap: () {
+            Navigator.of(context).pop();
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (BuildContext context) => ShowPaymentRecordsScreen()));
+          },
         ),
       ],
     ),

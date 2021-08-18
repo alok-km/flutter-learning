@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:merchant_demo_app/components/my_bottom_nav_bar.dart';
 
 import 'components/body.dart';
 
@@ -21,6 +22,7 @@ class ConfigurationScreen extends StatelessWidget {
         ),
       ),
       body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 }

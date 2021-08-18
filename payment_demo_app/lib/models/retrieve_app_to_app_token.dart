@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/io_client.dart';
 
 Future retrieveAppToAppToken(String retrieveURL) async {
@@ -12,5 +14,15 @@ Future retrieveAppToAppToken(String retrieveURL) async {
     Uri.parse(retrieveURL),
   );
   Map<String, dynamic> decodedResponse = jsonDecode(response.body);
-  return decodedResponse["payload"];
+  if (decodedResponse["status"] == "Success") {
+    return decodedResponse["payload"];
+  } else {
+    Fluttertoast.showToast(
+      msg:
+          "There was a problem while calling the API. Status: ${decodedResponse["status"]}, error: ${decodedResponse["error"]}.",
+      toastLength: Toast.LENGTH_LONG,
+      backgroundColor: Colors.grey[900],
+      textColor: Colors.redAccent[400],
+    );
+  }
 }
