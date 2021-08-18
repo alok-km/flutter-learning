@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payment_demo_app/models/check_payment_confirmation.dart';
+import 'package:payment_demo_app/models/confirm_payment.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key, required this.paymentInfo}) : super(key: key);
@@ -10,8 +10,11 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  getPaymentConfirmation() {
-    checkPaymentConfirmation(
+  getPaymentConfirmation() async {
+    if (widget.paymentInfo["Proxy Identifier Type"] == "Email Address") {
+      widget.paymentInfo["Proxy Identifier Type"] = "EMAL";
+    }
+    confirmPayment(
       widget.paymentInfo["Currency"],
       widget.paymentInfo["Amount"],
       widget.paymentInfo["Beneficiary Bank Code"],
@@ -22,7 +25,6 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    // initialize();
     return Column(
       children: [
         Container(

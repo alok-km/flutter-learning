@@ -5,7 +5,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/io_client.dart';
 import 'package:payment_demo_app/constants/strings.dart';
 
-Future checkPaymentConfirmation(
+void confirmPayment(
   String settlementCurrency,
   var settlementAmt,
   String clearingCode,
@@ -38,7 +38,7 @@ Future checkPaymentConfirmation(
     "realtimeOut": true,
     "exceptionType": "NONE",
     "exceptionHandlingStatus": "NONE",
-    "transactionId": "2D4BF3A8C37E11EB88320242AC110005",
+    "transactionId": "2D4BF3A8C37E11EB88320242AC110004",
     "fpsReferenceNo": "FRN20210602NpT8RIgXF",
     "endToEndId": "ecgatewaytest2",
     "categoryPurpose": "CXBSNS",
@@ -49,7 +49,7 @@ Future checkPaymentConfirmation(
     "debtorName": "Ho Mai Li",
     "debtorAgent": "000",
     "debtorAcctId": "0878946223",
-    "creditorName": "NA",
+    "creditorName": "Vincent Hung",
     "creditorAgent": "003",
     "creditorAcctId": "${creditorAcctId}",
     "creditorAcctIdType": "${creditorAcctIdType}",
@@ -69,7 +69,7 @@ Future checkPaymentConfirmation(
         ((X509Certificate cert, String host, int port) => trustSelfSigned);
   IOClient ioClient = new IOClient(httpClient);
   final response = await ioClient.post(
-    Uri.parse(checkPaymentConfirmationUrl),
+    Uri.parse(confirmPaymentUrl),
     body: body,
     headers: {
       "Content-Type": "application/json",
@@ -78,13 +78,14 @@ Future checkPaymentConfirmation(
     },
   );
   Map<String, dynamic> decodedResponse = jsonDecode(response.body);
-  print(decodedResponse);
+  // print(decodedResponse);
   if (decodedResponse["status"] == "Success") {
-    return decodedResponse;
+    print("Successfully made payment.");
+    // return decodedResponse;
   } else {
     Fluttertoast.showToast(
       msg:
-          "There was a problem while calling the API. Status: ${decodedResponse["status"]}, error: ${decodedResponse["error"]}.",
+          "There was a problem while calling the API. Status: ${decodedResponse["status"]}, error: ${decodedResponse["errors"]}.",
       toastLength: Toast.LENGTH_LONG,
       backgroundColor: Colors.grey[900],
       textColor: Colors.redAccent[400],
