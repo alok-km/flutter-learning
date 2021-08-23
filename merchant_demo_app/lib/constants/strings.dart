@@ -21,3 +21,4 @@ const generateTokenURL = "http://10.3.60.45:8123/generateAppToAppPaymentToken";
 const retrieveTokenURLprefix =
     "http://10.3.60.45:8123/retrieveAppToAppPaymentToken/";
 const encodeEmvQRCode = "http://10.3.60.45:8082/encodeEmvQRCode";
+const listPaymentRecordsUrl = "http://10.3.60.45:8123/listPaymentResult";

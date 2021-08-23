@@ -10,7 +10,7 @@ class AppToAppCheckoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar("Merchant App"),
       body: Body(),
       bottomNavigationBar: MyBottomNavBar(),
     );

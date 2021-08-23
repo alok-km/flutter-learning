@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
-        appBar: buildAppBar(),
+        appBar: buildAppBar("Merchant App"),
         drawer: buildDrawer(context),
         body: Body(cartItemController: cartItemController),
         bottomNavigationBar:

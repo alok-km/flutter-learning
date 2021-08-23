@@ -23,7 +23,7 @@ class _DisplayQRCodeState extends State<DisplayQRCode> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar("Merchant App"),
       body: Body(
         rawQrData: widget.rawQrData,
         dropDownValue: widget.dropDownValue,

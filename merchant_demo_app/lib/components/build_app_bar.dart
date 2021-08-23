@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
 
-AppBar buildAppBar() {
+AppBar buildAppBar(String title) {
   return AppBar(
-    title: Text(
-      'Merchant App',
-    ),
+    title: Text(title),
     backgroundColor: kPrimaryColor,
     elevation: 0,
     leading: Builder(
