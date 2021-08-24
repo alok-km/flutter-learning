@@ -30,7 +30,6 @@ Future login(String userId, String password, String deviceToken) async {
   Map<String, dynamic> decodedResponse = jsonDecode(response.body);
   if (decodedResponse["status"] == "Success") {
     welcomeScreenX.loginToken = decodedResponse["loginToken"];
-    print(welcomeScreenX.loginToken);
     return decodedResponse;
   } else {
     Fluttertoast.showToast(

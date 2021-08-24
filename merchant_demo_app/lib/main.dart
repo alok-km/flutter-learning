@@ -64,8 +64,7 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
 
     //to get the firebase token
     FirebaseMessaging.instance.getToken().then((token) {
-      print("Firebase Device Token");
-      print(token); // Print the Token in Console
+      print("Firebase Device Token: ${token}");
       welcomeScreenX.deviceToken = token!;
     });
   }

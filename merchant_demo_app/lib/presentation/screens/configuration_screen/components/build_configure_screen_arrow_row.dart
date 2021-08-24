@@ -11,16 +11,10 @@ GestureDetector buildConfigureScreenArrowRow(
   var propertyIndex = null;
   if (property == "proxyId") {
     propertyIndex = 0;
-    print("Through property index: ");
-    print(configurationController.properties[propertyIndex]);
   } else if (property == "proxyIdType") {
     propertyIndex = 1;
-    print("Through property index: ");
-    print(configurationController.properties[propertyIndex]);
   } else {
     propertyIndex = 2;
-    print("Through property index: ");
-    print(configurationController.properties[propertyIndex]);
   }
   return GestureDetector(
     onTap: () {
@@ -37,8 +31,6 @@ GestureDetector buildConfigureScreenArrowRow(
                   width: 180,
                   child: TextFormField(
                     controller: propertyController,
-                    // initialValue:
-                    //     configurationController.properties[propertyIndex],
                   ),
                 ),
               ],

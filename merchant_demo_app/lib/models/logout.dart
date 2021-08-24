@@ -29,7 +29,6 @@ Future logout(String userId, String loginToken) async {
   Map<String, dynamic> decodedResponse = jsonDecode(response.body);
   if (decodedResponse["status"] == "Success") {
     welcomeScreenX.loginToken = 'null';
-    print(welcomeScreenX.loginToken);
     return decodedResponse;
   } else {
     Fluttertoast.showToast(

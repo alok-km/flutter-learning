@@ -33,19 +33,47 @@ AppBar buildAppBar(String title) {
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
               onPressed: () async {
-                var response = await logout(
-                  welcomeScreenX.usernameX.text,
-                  welcomeScreenX.userpwdX.text,
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: Text(title),
+                      content: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text("Are you sure you want to logout?"),
+                        ],
+                      ),
+                      actions: [
+                        TextButton(
+                          onPressed: () async {
+                            var response = await logout(
+                              welcomeScreenX.usernameX.text,
+                              welcomeScreenX.loginToken,
+                            );
+                            if (response["status"] == "Success") {
+                              Navigator.of(context).pushAndRemoveUntil(
+                                  MaterialPageRoute(
+                                      builder: (context) => WelcomeScreen()),
+                                  (Route<dynamic> route) => false);
+                              Fluttertoast.showToast(
+                                msg: "Successfully logged out",
+                                toastLength: Toast.LENGTH_SHORT,
+                              );
+                            }
+                          },
+                          child: Text("Yes"),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Text("No"),
+                        ),
+                      ],
+                    );
+                  },
                 );
-                if (response["status"] == "Success") {
-                  Fluttertoast.showToast(
-                    msg: "Successfully logged out",
-                    toastLength: Toast.LENGTH_SHORT,
-                  );
-                  Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(builder: (context) => WelcomeScreen()),
-                      (Route<dynamic> route) => false);
-                }
               },
               child: Row(
                 children: [
