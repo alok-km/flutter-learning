@@ -5,7 +5,6 @@ import 'cart_item_card.dart';
 //ignore: must_be_immutable
 class ItemList extends StatelessWidget {
   ItemList({Key? key, required this.cartItemController}) : super(key: key);
-  // final CartItemController cartItemController = Get.put(CartItemController());
   final CartItemController cartItemController;
 
   @override

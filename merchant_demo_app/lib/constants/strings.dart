@@ -20,5 +20,8 @@ const QRPAYMENT = "/qrPayment";
 const generateTokenURL = "http://10.3.60.45:8123/generateAppToAppPaymentToken";
 const retrieveTokenURLprefix =
     "http://10.3.60.45:8123/retrieveAppToAppPaymentToken/";
-const encodeEmvQRCode = "http://10.3.60.45:8082/encodeEmvQRCode";
+const encodeEmvQRCode = "http://10.3.60.45:5080/encodeEmvQRCode";
 const listPaymentRecordsUrl = "http://10.3.60.45:8123/listPaymentResult";
+const deviceRegistrationUrl = "http://app5.fps.dev:8123/deviceRegistration";
+const loginUrl = "http://app5.fps.dev:8123/login";
+const logoutUrl = "http://app5.fps.dev:8123/logout";

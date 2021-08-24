@@ -82,8 +82,10 @@ class MyBottomNavBarHome extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 IconButton(
-                  onPressed: () =>
-                      Navigator.pushReplacementNamed(context, HOME),
+                  onPressed: () {
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                        HOME, (Route<dynamic> route) => false);
+                  },
                   icon: Image.asset("lib/assets/icons/home.png"),
                 ),
                 IconButton(

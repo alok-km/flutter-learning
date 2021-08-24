@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:merchant_demo_app/controllers/welcome_screen_controller.dart';
 import 'package:merchant_demo_app/services/local_notification_service.dart';
 import 'controllers/cart_item_controller.dart';
 import 'models/background_notifications_handler.dart';
@@ -10,6 +11,7 @@ import 'package:get/get.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Get.put(CartItemController());
+  await Get.put(WelcomeScreenX());
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
   runApp(MerchantDemoApp(router: AppRouter()));
@@ -25,6 +27,8 @@ class MerchantDemoApp extends StatefulWidget {
 }
 
 class _MerchantDemoAppState extends State<MerchantDemoApp> {
+  WelcomeScreenX welcomeScreenX = Get.put(WelcomeScreenX());
+
   Future<void> setupInteractedMessage() async {
     RemoteMessage? initialMessage =
         await FirebaseMessaging.instance.getInitialMessage();
@@ -62,6 +66,7 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
     FirebaseMessaging.instance.getToken().then((token) {
       print("Firebase Device Token");
       print(token); // Print the Token in Console
+      welcomeScreenX.deviceToken = token!;
     });
   }
 

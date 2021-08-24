@@ -1,6 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/presentation/screens/welcome_screen/components/text_field_with_hint_text.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+import 'package:merchant_demo_app/controllers/welcome_screen_controller.dart';
+import 'package:merchant_demo_app/components/text_field_with_hint_text.dart';
+import 'package:merchant_demo_app/models/device_registration.dart';
 import 'package:merchant_demo_app/presentation/screens/welcome_screen/pages/login_page.dart';
 
 class CreateAccountPage extends StatefulWidget {
@@ -11,18 +15,8 @@ class CreateAccountPage extends StatefulWidget {
 }
 
 class _CreateAccountPageState extends State<CreateAccountPage> {
-  final ecGatewayDevIDController = TextEditingController();
-  final custIDController = TextEditingController();
-  final merchantIDController = TextEditingController();
-  final userIDController = TextEditingController();
-  final passwordController = TextEditingController();
-  final endToEndIDController = TextEditingController();
-  bool _validateEcGatewayDevId = false;
-  bool _validateCustID = false;
-  bool _validateMerchantID = false;
-  bool _validateUserID = false;
-  bool _validatePassword = false;
-  bool _validateEndToEndID = false;
+  WelcomeScreenX welcomeScreenX = Get.find();
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -59,35 +53,47 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                                 'lib/assets/images/merchant_app_icon.png'),
                           ),
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "EC Gateway Device ID",
                           hint: "Enter EC Gateway Device ID",
-                          validateText: _validateEcGatewayDevId,
+                          formKey: welcomeScreenX.ecGatewayDevKey,
+                          controller: welcomeScreenX.ecGatewayDevIDX,
+                          obscureText: false,
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "Customer ID",
                           hint: "Enter Customer ID",
-                          validateText: _validateCustID,
+                          formKey: welcomeScreenX.custIDKey,
+                          controller: welcomeScreenX.custIDX,
+                          obscureText: false,
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "Merchant ID",
                           hint: "Enter Merchant ID",
-                          validateText: _validateMerchantID,
+                          formKey: welcomeScreenX.merchantIDKey,
+                          controller: welcomeScreenX.merchantIDX,
+                          obscureText: false,
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "User ID",
                           hint: "Enter User ID",
-                          validateText: _validateUserID,
+                          formKey: welcomeScreenX.userIDKey,
+                          controller: welcomeScreenX.userIDX,
+                          obscureText: false,
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "Password",
                           hint: "Enter Password",
-                          validateText: _validatePassword,
+                          formKey: welcomeScreenX.pwdKey,
+                          controller: welcomeScreenX.pwdX,
+                          obscureText: true,
                         ),
-                        TextFieldWithHintText(
+                        CustomTextFormField(
                           label: "End To End ID",
                           hint: "Enter End To End ID",
-                          validateText: _validateEndToEndID,
+                          formKey: welcomeScreenX.endToEndIDKey,
+                          controller: welcomeScreenX.endToEndIDX,
+                          obscureText: false,
                         ),
                         Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -100,37 +106,56 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                                 fontSize: 16,
                               ),
                             ),
-                            onPressed: () {
-                              setState(() {
-                                ecGatewayDevIDController.text.isEmpty
-                                    ? _validateEcGatewayDevId = true
-                                    : _validateEcGatewayDevId = false;
-                                custIDController.text.isEmpty
-                                    ? _validateCustID = true
-                                    : _validateCustID = false;
-                                merchantIDController.text.isEmpty
-                                    ? _validateMerchantID = true
-                                    : _validateMerchantID = false;
-                                userIDController.text.isEmpty
-                                    ? _validateUserID = true
-                                    : _validateUserID = false;
-                                passwordController.text.isEmpty
-                                    ? _validatePassword = true
-                                    : _validatePassword = false;
-                                endToEndIDController.text.isEmpty
-                                    ? _validateEndToEndID = true
-                                    : _validateEndToEndID = false;
-                              });
-                              if (!_validateEcGatewayDevId &&
-                                  !_validateCustID &&
-                                  !_validateMerchantID &&
-                                  !_validateUserID &&
-                                  !_validatePassword &&
-                                  !_validateEndToEndID) {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => LoginPage()));
+                            onPressed: () async {
+                              setState(() {});
+                              if (welcomeScreenX.ecGatewayDevKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.ecGatewayDevFlag = true;
+                              }
+                              if (welcomeScreenX.custIDKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.custIDFlag = true;
+                              }
+                              if (welcomeScreenX.merchantIDKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.merchantIDFlag = true;
+                              }
+                              if (welcomeScreenX.userIDKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.userIDFlag = true;
+                              }
+                              if (welcomeScreenX.pwdKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.pwdFlag = true;
+                              }
+                              if (welcomeScreenX.endToEndIDKey.currentState!
+                                  .validate()) {
+                                welcomeScreenX.endToEndIDFlag = true;
+                              }
+                              if (welcomeScreenX.ecGatewayDevFlag &&
+                                  welcomeScreenX.custIDFlag &&
+                                  welcomeScreenX.merchantIDFlag &&
+                                  welcomeScreenX.userIDFlag &&
+                                  welcomeScreenX.pwdFlag &&
+                                  welcomeScreenX.endToEndIDFlag) {
+                                var response = await deviceRegistration(
+                                  welcomeScreenX.ecGatewayDevIDX.text,
+                                  welcomeScreenX.custIDX.text,
+                                  welcomeScreenX.merchantIDX.text,
+                                  welcomeScreenX.userIDX.text,
+                                  welcomeScreenX.pwdX.text,
+                                  welcomeScreenX.endToEndIDX.text,
+                                );
+                                if (response["status"] == "Success") {
+                                  Fluttertoast.showToast(
+                                    msg: "Successfully created account",
+                                    toastLength: Toast.LENGTH_SHORT,
+                                  );
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => LoginPage()));
+                                }
                               }
                             },
                           ),

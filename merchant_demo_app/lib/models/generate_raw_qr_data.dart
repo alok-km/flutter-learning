@@ -9,7 +9,7 @@ Future generateRawQrData(String currency, String price, String refLabel) async {
   Map<String, dynamic> decodedResponse;
   final body = jsonEncode({
     "poiMethod": "DYNAMIC",
-    "trxCurrency": 1,
+    "trxCurrency": "${currency}",
     "trxAmt": "${price}",
     "referenceLabel": "${refLabel}",
     "clearingCode": "004",
@@ -32,7 +32,6 @@ Future generateRawQrData(String currency, String price, String refLabel) async {
     },
   );
   decodedResponse = jsonDecode(response.body);
-  //print(decodedResponse);
   if (decodedResponse["status"] == "Success") {
     return decodedResponse["data"]["rawQrData"];
   } else {
