@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:merchant_demo_app/models/list_payment_records.dart';
 
 //ignore: must_be_immutable
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   Body({Key? key, required this.paymentRecords}) : super(key: key);
   var paymentRecords;
+
+  @override
+  _BodyState createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
+  String dropDownValue = 'Today';
+
+  var items = ["Today" /*, "3 days", "1 week"*/];
 
   @override
   Widget build(BuildContext context) {
@@ -12,16 +22,34 @@ class Body extends StatelessWidget {
       child: ListView(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
-                Icons.payment,
-                color: Colors.green,
+              Row(
+                children: [
+                  Icon(
+                    Icons.payment,
+                    color: Colors.green,
+                  ),
+                  SizedBox(width: 8),
+                  Text(
+                    "Payment Records",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
-              SizedBox(width: 8),
-              Text(
-                "Payment Records",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              )
+              DropdownButton(
+                value: dropDownValue,
+                icon: Icon(Icons.keyboard_arrow_down),
+                items: items.map((String items) {
+                  return DropdownMenuItem(value: items, child: Text(items));
+                }).toList(),
+                onChanged: (String? newValue) {
+                  setState(() {
+                    dropDownValue = newValue!;
+                    getPaymentRecords(widget.paymentRecords, dropDownValue);
+                  });
+                },
+              ),
             ],
           ),
           Divider(height: 15, thickness: 2),
@@ -29,7 +57,7 @@ class Body extends StatelessWidget {
           Container(
             height: 500,
             child: ListView.builder(
-              itemCount: paymentRecords.length,
+              itemCount: widget.paymentRecords.length,
               itemBuilder: (BuildContext context, int index) {
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,41 +72,29 @@ class Body extends StatelessWidget {
                     SizedBox(height: 4),
                     ListTile(
                       title: Text("Settlement Amount"),
-                      subtitle:
-                          Text("${paymentRecords[index]["settlementAmt"]}"),
+                      subtitle: Text(
+                          "${widget.paymentRecords[index]["settlementAmt"]}"),
                     ),
                     ListTile(
                       title: Text("Beneficiary Bank Code"),
-                      subtitle:
-                          Text("${paymentRecords[index]["clearingCode"]}"),
+                      subtitle: Text(
+                          "${widget.paymentRecords[index]["clearingCode"]}"),
                     ),
                     ListTile(
                       title: Text("Proxy Identifier"),
-                      subtitle:
-                          Text("${paymentRecords[index]["creditorAcctId"]}"),
+                      subtitle: Text(
+                          "${widget.paymentRecords[index]["creditorAcctId"]}"),
                     ),
                     ListTile(
                       title: Text("Proxy Identifier Type"),
                       subtitle: Text(
-                          "${paymentRecords[index]["creditorAcctIdType"]}"),
+                          "${widget.paymentRecords[index]["creditorAcctIdType"]}"),
                     ),
                     Divider(
                       height: 2.0,
                     ),
                   ],
                 );
-                //String key = paymentRecords[index].keys.elementAt(index);
-                // return Column(
-                //   children: [
-                //     ListTile(
-                //       title: Text("$key"),
-                //       subtitle: Text("${paymentRecords[index][key]}"),
-                //     ),
-                //     Divider(
-                //       height: 2.0,
-                //     ),
-                //   ],
-                // );
               },
             ),
           ),

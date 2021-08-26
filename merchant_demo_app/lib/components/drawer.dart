@@ -6,25 +6,6 @@ import 'package:merchant_demo_app/presentation/screens/show_payment_records_scre
 
 Drawer buildDrawer(BuildContext context) {
   var paymentRecords = <Map>[];
-  // var paymentRecords2 = {[], [], []};
-  getPaymentRecords() async {
-    final response = await listPaymentRecords();
-    var noOfPayments = response.length;
-
-    for (var i = 0; i < noOfPayments; i++) {
-      paymentRecords.add(response[i]);
-      // paymentRecords
-      //     .add({'Beneficiary Bank Code': response[i]['clearingCode']});
-      // paymentRecords.add({'Settlement Amount': response[i]['settlementAmt']});
-      // paymentRecords.add({'Proxy Identifier': response[i]['creditorAcctId']});
-      // paymentRecords
-      //     .add({'Proxy Identifier Type': response[i]['creditorAcctIdType']});
-
-      // if (paymentRecords[i]["Proxy Identifier Type"] == "EMAL") {
-      //   paymentRecords[i]["Proxy Identifier Type"] = "Email Address";
-      // }
-    }
-  }
 
   return Drawer(
     child: ListView(
@@ -51,7 +32,7 @@ Drawer buildDrawer(BuildContext context) {
           onTap: () async {
             print(paymentRecords.runtimeType);
             Navigator.of(context).pop();
-            await getPaymentRecords();
+            await getPaymentRecords(paymentRecords, "Today");
             Navigator.of(context).push(MaterialPageRoute(
                 builder: (BuildContext context) =>
                     ShowPaymentRecordsScreen(paymentRecords: paymentRecords)));

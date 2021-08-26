@@ -15,7 +15,7 @@ Future retrieveAppToAppToken(String retrieveURL) async {
       Uri.parse(retrieveURL),
     );
     Map<String, dynamic> decodedResponse = jsonDecode(response.body);
-
+    print("PAYLOAD: ${decodedResponse["payload"]}");
     return decodedResponse["payload"];
   } catch (e) {
     Fluttertoast.showToast(

@@ -11,7 +11,7 @@ const double kDefaultPadding = 20.0;
 //constants for routing
 const CHECKOUT = "/checkout";
 const PAYLOAD = "/payload";
-const PAYMENTSUCCESS = "/paymentsuccess";
+const PAYMENTSUCCESS = "/paymentSuccess";
 const DISPLAYQR = "/displayQR";
 const HOME = "/home";
 const QRPAYMENT = "/qrPayment";
@@ -22,6 +22,6 @@ const retrieveTokenURLprefix =
     "http://10.3.60.45:8123/retrieveAppToAppPaymentToken/";
 const encodeEmvQRCode = "http://10.3.60.45:5080/encodeEmvQRCode";
 const listPaymentRecordsUrl = "http://10.3.60.45:8123/listPaymentResult";
-const deviceRegistrationUrl = "http://app5.fps.dev:8123/deviceRegistration";
-const loginUrl = "http://app5.fps.dev:8123/login";
-const logoutUrl = "http://app5.fps.dev:8123/logout";
+const deviceRegistrationUrl = "http://10.3.60.45:8123/deviceRegistration";
+const loginUrl = "http://10.3.60.45:8123/login";
+const logoutUrl = "http://10.3.60.45:8123/logout";

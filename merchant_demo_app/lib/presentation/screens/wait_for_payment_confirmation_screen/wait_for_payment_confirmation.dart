@@ -1,6 +1,10 @@
+import 'dart:convert';
+
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/controllers/reference_label_controller.dart';
 import 'package:merchant_demo_app/models/launch_android_intent.dart';
 import 'package:merchant_demo_app/presentation/screens/wait_for_payment_confirmation_screen/body.dart';
 import 'package:merchant_demo_app/services/local_notification_service.dart';
@@ -20,20 +24,22 @@ class _WaitForPaymentConfirmationState
   String token;
   _WaitForPaymentConfirmationState(this.token);
 
+  ReferenceLabelX referenceLabelX = Get.find();
   Future<void> setupInteractedMessage() async {
     RemoteMessage? initialMessage =
         await FirebaseMessaging.instance.getInitialMessage();
-    if (initialMessage != null &&
-        initialMessage.data["referenceLabel"] == "moguts") {
-      //print(initialMessage.data);
-
-      Navigator.of(context).pushNamed(initialMessage.data["route"]);
+    if (initialMessage != null) {
+      var messageJson = jsonDecode(initialMessage.data["data"]);
+      if (messageJson["endToEndId"] == referenceLabelX.referenceLabel) {
+        Navigator.of(context).pushNamed(PAYMENTSUCCESS);
+      }
     }
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      //print(message.data);
-      if (message.data["referenceLabel"] == "moguts") {
-        Navigator.of(context).pushNamed(message.data["route"]);
+      var messageJson = jsonDecode(message.data["data"]);
+      print("Message json: ${messageJson["endToEndId"]}");
+      if (messageJson["endToEndId"] == referenceLabelX.referenceLabel) {
+        Navigator.of(context).pushNamed(PAYMENTSUCCESS);
       }
     });
   }

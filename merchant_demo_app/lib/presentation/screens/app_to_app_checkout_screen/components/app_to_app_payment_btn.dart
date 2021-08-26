@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:merchant_demo_app/constants/strings.dart';
+import 'package:merchant_demo_app/controllers/reference_label_controller.dart';
 import 'package:merchant_demo_app/models/generate_app_to_app_token.dart';
 import 'package:merchant_demo_app/models/generate_random_ref_label.dart';
 import 'package:merchant_demo_app/presentation/screens/wait_for_payment_confirmation_screen/wait_for_payment_confirmation.dart';
@@ -16,6 +18,7 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
   //VARIABLES
   String token = "";
   bool flag = false;
+  ReferenceLabelX referenceLabelX = Get.put(ReferenceLabelX());
 
   //FUNCTIONS
   void pressAppToAppPaymentBtn() async {
@@ -31,9 +34,10 @@ class _AppToAppPaymentBtnState extends State<AppToAppPaymentBtn> {
 
   getToken() async {
     try {
-      final tokenResult = await generateAppToAppToken(generateRefLabel());
+      referenceLabelX.referenceLabel = generateRefLabel();
+      final tokenResult =
+          await generateAppToAppToken(referenceLabelX.referenceLabel);
       print(tokenResult);
-      //for converting the future returned from generateAppToAppToken(refLabel) to string
       setState(() {
         token = tokenResult;
       });

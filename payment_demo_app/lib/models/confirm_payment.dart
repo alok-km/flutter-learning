@@ -11,6 +11,7 @@ void confirmPayment(
   String clearingCode,
   String creditorAcctId,
   String creditorAcctIdType,
+  String endToEndID,
 ) async {
   final body = jsonEncode({
     "clientReqId": "2D4BF3A8C37E11EB88320242AC110009",
@@ -40,7 +41,7 @@ void confirmPayment(
     "exceptionHandlingStatus": "NONE",
     "transactionId": "2D4BF3A8C37E11EB88320242AC110004",
     "fpsReferenceNo": "FRN20210602NpT8RIgXF",
-    "endToEndId": "ecgatewaytest2",
+    "endToEndId": endToEndID,
     "categoryPurpose": "CXBSNS",
     "settlementAmt": settlementAmt,
     "settlementCurrency": "${settlementCurrency}",

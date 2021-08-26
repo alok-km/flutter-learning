@@ -24,6 +24,7 @@ Future decodeEmvQRCode(String rawQrData) async {
   );
   Map<String, dynamic> decodedResponse = jsonDecode(response.body);
   if (decodedResponse["status"] == "Success") {
+    print("decode qr code ${decodedResponse["data"]}");
     return decodedResponse["data"];
   } else {
     Fluttertoast.showToast(

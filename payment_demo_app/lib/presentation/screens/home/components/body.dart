@@ -15,12 +15,12 @@ class _BodyState extends State<Body> {
       widget.paymentInfo["Proxy Identifier Type"] = "EMAL";
     }
     confirmPayment(
-      widget.paymentInfo["Currency"],
-      widget.paymentInfo["Amount"],
-      widget.paymentInfo["Beneficiary Bank Code"],
-      widget.paymentInfo["Proxy Identifier"],
-      widget.paymentInfo["Proxy Identifier Type"],
-    );
+        widget.paymentInfo["Currency"],
+        widget.paymentInfo["Amount"],
+        widget.paymentInfo["Beneficiary Bank Code"],
+        widget.paymentInfo["Proxy Identifier"],
+        widget.paymentInfo["Proxy Identifier Type"],
+        widget.paymentInfo["Reference Label"]);
   }
 
   @override

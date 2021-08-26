@@ -41,3 +41,27 @@ Future listPaymentRecords() async {
     );
   }
 }
+
+DateTime timestampToDate(int timestamp) {
+  return DateTime.fromMicrosecondsSinceEpoch(timestamp);
+}
+
+getPaymentRecords(var paymentRecords, String duration) async {
+  final response = await listPaymentRecords();
+  var noOfPayments = response.length;
+  // DateTime now = DateTime.now();
+  // DateTime date = new DateTime(now.year, now.month, now.day);
+  for (var i = 0; i < noOfPayments; i++) {
+    // if (duration == "Today") {
+    //   if (timestampToDate(response[i]["settlementDatetime "]) == date) {
+    //     paymentRecords.add(response[i]);
+    //   }
+    // } else if (duration == "3 days") {
+    //   paymentRecords.add(response[i]);
+    // } else if (duration == "1 week") {
+    //   paymentRecords.add(response[i]);
+    // }
+    paymentRecords.add(response[i]);
+  }
+  return paymentRecords;
+}
