@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/components/build_app_bar.dart';
-
+import 'package:merchant_demo_app/components/my_bottom_nav_bar.dart';
 import 'components/body.dart';
 
 class PaymentSuccessScreen extends StatelessWidget {
@@ -9,8 +8,8 @@ class PaymentSuccessScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar("Merchant App"),
       body: Body(),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 }

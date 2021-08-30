@@ -10,10 +10,10 @@ import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Get.put(CartItemController());
-  await Get.put(WelcomeScreenX());
   await Firebase.initializeApp();
   FirebaseMessaging.onBackgroundMessage(backgroundHandler);
+  Get.put(CartItemController());
+  Get.put(WelcomeScreenX());
   runApp(MerchantDemoApp(router: AppRouter()));
 }
 
@@ -64,7 +64,7 @@ class _MerchantDemoAppState extends State<MerchantDemoApp> {
 
     //to get the firebase token
     FirebaseMessaging.instance.getToken().then((token) {
-      print("Firebase Device Token: ${token}");
+      print("Firebase Device Token: $token");
       welcomeScreenX.deviceToken = token!;
     });
   }

@@ -45,7 +45,7 @@ class _BodyState extends State<Body> {
       print(err);
     }
 
-    if (await generatedQr) {
+    if (generatedQr) {
       Navigator.push(
         context,
         MaterialPageRoute(

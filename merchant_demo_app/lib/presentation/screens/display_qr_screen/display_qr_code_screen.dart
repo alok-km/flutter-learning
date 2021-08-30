@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:merchant_demo_app/components/build_app_bar.dart';
+import 'package:merchant_demo_app/components/build_app_bar_with_back_button.dart';
 import 'package:merchant_demo_app/components/my_bottom_nav_bar.dart';
 import 'components/body.dart';
 
@@ -23,7 +23,7 @@ class _DisplayQRCodeState extends State<DisplayQRCode> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar("Merchant App"),
+      appBar: buildAppBarWithBackButton("QR Code"),
       body: Body(
         rawQrData: widget.rawQrData,
         dropDownValue: widget.dropDownValue,

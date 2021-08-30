@@ -8,7 +8,7 @@ GestureDetector buildConfigureScreenArrowRow(
     BuildContext context, String title, String property) {
   TextEditingController propertyController = TextEditingController();
   ConfigurationController configurationController = Get.find();
-  var propertyIndex = null;
+  var propertyIndex;
   if (property == "proxyId") {
     propertyIndex = 0;
   } else if (property == "proxyIdType") {
@@ -26,7 +26,7 @@ GestureDetector buildConfigureScreenArrowRow(
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text("Set ${title} below: "),
+                Text("Set $title below: "),
                 Container(
                   width: 180,
                   child: TextFormField(

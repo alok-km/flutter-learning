@@ -18,8 +18,8 @@ class Body extends StatelessWidget {
           HeaderWithSearchBox(size: size),
           CartTitleWithEditBtn(
             title: "Shopping Cart",
-            pre_icon: "lib/assets/icons/shopping-cart.svg",
-            post_icon: "lib/assets/icons/edit_cart.png",
+            preIcon: "lib/assets/icons/shopping-cart.svg",
+            postIcon: "lib/assets/icons/edit_cart.png",
             press: () {},
           ),
           ItemList(cartItemController: cartItemController),

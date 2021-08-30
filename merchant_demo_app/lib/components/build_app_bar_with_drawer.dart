@@ -7,7 +7,7 @@ import 'package:merchant_demo_app/controllers/welcome_screen_controller.dart';
 import 'package:merchant_demo_app/models/logout.dart';
 import 'package:merchant_demo_app/presentation/screens/welcome_screen/welcome_screen.dart';
 
-AppBar buildAppBar(String title) {
+AppBar buildAppBarWithDrawer(String title) {
   WelcomeScreenX welcomeScreenX = Get.find();
   return AppBar(
     title: Text(title),

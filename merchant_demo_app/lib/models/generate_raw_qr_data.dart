@@ -9,9 +9,9 @@ Future generateRawQrData(String currency, String price, String refLabel) async {
   Map<String, dynamic> decodedResponse;
   final body = jsonEncode({
     "poiMethod": "DYNAMIC",
-    "trxCurrency": "${currency}",
-    "trxAmt": "${price}",
-    "referenceLabel": "${refLabel}",
+    "trxCurrency": "$currency",
+    "trxAmt": "$price",
+    "referenceLabel": "$refLabel",
     "clearingCode": "004",
     "proxyId": "dev@iaspec.com",
     "proxyIdType": "EMAIL_ADDRESS",

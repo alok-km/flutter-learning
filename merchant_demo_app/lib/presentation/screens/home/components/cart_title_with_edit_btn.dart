@@ -7,11 +7,11 @@ class CartTitleWithEditBtn extends StatelessWidget {
     Key? key,
     required this.title,
     required this.press,
-    required this.pre_icon,
-    required this.post_icon,
+    required this.preIcon,
+    required this.postIcon,
   }) : super(key: key);
 
-  final String title, pre_icon, post_icon;
+  final String title, preIcon, postIcon;
   final Function press;
 
   @override
@@ -24,13 +24,13 @@ class CartTitleWithEditBtn extends StatelessWidget {
         children: [
           CartTitleWithCustomUnderline(
             text: title,
-            icon: pre_icon,
+            icon: preIcon,
           ),
           Spacer(),
           IconButton(
             onPressed: () {},
             iconSize: 20,
-            icon: Image.asset(post_icon),
+            icon: Image.asset(postIcon),
           )
         ],
       ),

@@ -49,7 +49,7 @@ class MyBottomNavBarHome extends StatelessWidget {
                 ),
                 Spacer(),
                 Container(
-                  width: 80,
+                  width: 85,
                   child: ElevatedButton(
                     onPressed: () {
                       if (cartItemController.cartItemCount.sum > 0) {

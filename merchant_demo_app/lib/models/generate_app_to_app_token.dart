@@ -18,7 +18,7 @@ Future generateAppToAppToken(String refLabel) async {
     "merchantTimeout": 1665639120000,
     "transactionCcy": "HKD",
     "transactionAmount": "${cartItemController.total[0]}",
-    "referenceLabel": "${refLabel}"
+    "referenceLabel": "$refLabel"
   });
   bool trustSelfSigned = true;
   HttpClient httpClient = new HttpClient()

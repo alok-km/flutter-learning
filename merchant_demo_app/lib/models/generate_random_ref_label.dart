@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:merchant_demo_app/controllers/configuration_controller.dart';
 
 ConfigurationController configurationController = Get.find();
+// ignore: non_constant_identifier_names
 var RANDOM = Random.secure();
 
 String getRandString(int len) {
